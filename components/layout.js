@@ -4,7 +4,7 @@ import Image from 'next/image';
 const Layout = ({ children }) => {
 	return (
 		<>
-			<nav className={ styles.sticky + ' db dt-l w-100 border-box pa3 ph6-l bg-white shadow-3' }>
+			<nav className={ styles.sticky + ' db dt-l w-100 border-box pa3 ph7-l bg-white shadow-3' }>
 		        <a className="db dtc-l v-mid mid-gray link dim w-100 w-25-l tc tl-l mb2 mb0-l" href="#" title="Home">
 		          	<Image
 			            src="/logos/logo_2.png"
@@ -22,7 +22,7 @@ const Layout = ({ children }) => {
 		        </div>
 		    </nav>
 		      
-		    <main>{children}</main>
+		    <main className>{children}</main>
 		      
 		    <footer>  
 		    	footer 
