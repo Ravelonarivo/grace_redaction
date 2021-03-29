@@ -1,0 +1,19 @@
+.bgWrap {
+  position: relative;
+  height: 88vh;
+  width: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.bgText {
+  font-size: 4rem;
+  text-shadow: 1px 1px 1px #3c5c5e;
+}
+
+.bgTextAndButton {
+  position: absolute;
+  top: 55%; 
+  left: 47%;
+  transform: translate(-50%, -50%);
+}
