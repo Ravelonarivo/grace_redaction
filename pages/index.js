@@ -1,65 +1,64 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Head from 'next/head';
+import styles from '../styles/Home.module.css';
+import Image from 'next/image';
+import Link from 'next/link'; 
 
-export default function Home() {
+const Home = () => {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
-        <title>Create Next App</title>
+        <title>Home</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+      <nav className={ styles.sticky + ' db dt-l w-100 border-box pa3 ph6-l bg-white shadow-3' }>
+        <a className="db dtc-l v-mid mid-gray link dim w-100 w-25-l tc tl-l mb2 mb0-l" href="#" title="Home">
+          <Image
+            src="/logos/logo_2.png"
+            height={60}
+            width={60}
+            alt="logo"
+          />
+        </a>
+        <div className="db dtc-l v-mid w-100 w-75-l tc tr-l">
+          <a className="link dim f6 f5-l dib dark-blue b mr3 mr4-l" href="#" title="Accueil">Accueil</a>
+          <a className="link dim f6 f5-l dib dark-blue b mr3 mr4-l" href="#" title="Offres">Offres</a>
+          <a className="link dim f6 f5-l dib dark-blue b mr3 mr4-l" href="#" title="Processus">Processus</a>
+          <a className="link dim f6 f5-l dib dark-blue b mr3 mr4-l" href="#" title="Contact">Contact</a>
+          <a className="link dim f6 f5-l dib dark-blue b " href="#" title="Blog">Blog</a>
         </div>
+      </nav>
+
+      <main> 
+        <section>
+          <div className={ styles.bgWrap }>
+            <Image
+              src="/background_7.jpg"
+              layout="fill"
+              objectFit="cover"
+              quality={100}
+              alt="background-image"
+            />
+          </div>
+          <div className={ styles.bgTextAndButton }>
+            <p className={ styles.bgText + ' dark-blue fw8' }>
+              Confiez nous vos projets.
+            </p>
+            <div class="tc ph3">
+              <a class="f4 grow no-underline br-pill ph3 pv2 mb2 dib white bg-dark-blue" href="#0">Voir nos offres</a>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <p>Test</p>
+        </section>
       </main>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
+      <footer>   
       </footer>
     </div>
-  )
-}
+  );
+};
+
+export default Home;
