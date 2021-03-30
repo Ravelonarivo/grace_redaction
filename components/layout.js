@@ -17,8 +17,8 @@ const Layout = ({ children }) => {
 			    	<a className="link dim f6 f5-l dib dark-blue b mr3 mr4-l" href="#presentation" title="presentation">Accueil</a>
 			        <a className="link dim f6 f5-l dib dark-blue b mr3 mr4-l" href="#offers" title="Offres">Offres</a>
 			        <a className="link dim f6 f5-l dib dark-blue b mr3 mr4-l" href="#" title="Processus">Processus</a>
-			        <a className="link dim f6 f5-l dib dark-blue b mr3 mr4-l" href="#" title="Contact">Contact</a>
-			        <a className="link dim f6 f5-l dib dark-blue b " href="#" title="Blog">Blog</a>
+			        <a className="link dim f6 f5-l dib dark-blue b mr3 mr4-l" href="#" title="Blog">Blog</a>
+			        <a className="link dim f6 f5-l dib dark-blue b " href="#" title="Contact">Contact</a>
 		        </div>
 		    </nav>
 		      
