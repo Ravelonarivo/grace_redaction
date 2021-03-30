@@ -1,0 +1,15 @@
+.title:after {
+	display: block;
+    height: 2px;
+    background-color: #00449e;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.bgWrap {
+	filter: grayscale(100%);
+   	overflow: hidden;
+  	z-index: 0;
+}

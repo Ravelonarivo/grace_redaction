@@ -6,11 +6,12 @@ const Presentation = () => {
 		<>
 			<div className={ styles.bgWrap }>
 	            <Image
-	              src="/background_7.jpg"
-	              layout="fill"
-	              objectFit="cover"
-	              quality={100}
-	              alt="background-image"
+	            	priority="true"
+		        	src="/presentation_background.jpg"
+		            layout="fill"
+		            objectFit="cover"
+		            quality={100}
+		            alt="presentation-image"
 	            />
 	        </div>
 	        <div className={ styles.bgTextAndButton }>
