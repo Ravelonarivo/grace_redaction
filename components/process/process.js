@@ -1,10 +1,11 @@
 import styles from './process.module.css';
+import homeStyles from '../../styles/Home.module.css';
 import Image from 'next/image';
 
 const Process = () => {
 	return (
 		<div id="process" className="mt5">
-			<h2 className={ styles.title + ' tc f2 dark-blue fw4' }>Comment nous procédons</h2>
+			<h2 className={ homeStyles.title + ' tc f2 dark-blue fw4' }>Comment nous procédons</h2>
 			<div className="bg-near-white vh-75">
 				<div className="mh7 h-100">
 					<div className={ styles.bgWrap + ' fl relative h-100 w-60' }>

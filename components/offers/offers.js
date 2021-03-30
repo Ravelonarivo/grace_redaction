@@ -1,4 +1,5 @@
 import styles from './offers.module.css';
+import homeStyles from '../../styles/Home.module.css';
 import { DesktopOutline } from 'react-ionicons';
 import { DocumentTextOutline } from 'react-ionicons';
 import { CheckmarkDoneOutline } from 'react-ionicons';
@@ -6,7 +7,7 @@ import { CheckmarkDoneOutline } from 'react-ionicons';
 const Offers = () => {
 	return (
 		<div id="offers" className="mt5 mh7">
-			<h2 className={ styles.title + ' tc f2 dark-blue fw4' }>Nous sommes une agence de rédaction</h2>
+			<h2 className={ homeStyles.title + ' tc f2 dark-blue fw4' }>Nous sommes une agence de rédaction</h2>
 			<p className="mh6 mid-gray f4 fw3 lh-copy">
 				Nam porttitor justo id ante lacinia faucibus. Nullam erat velit, placerat ut mollis a, venenatis vitae sapien. Vestibulum pretium arcu lorem. Ut vitae dolor eu dolor aliquam varius a id mauris. Suspendisse sollicitudin nunc vel sem vestibulum faucibus.
 			</p>
