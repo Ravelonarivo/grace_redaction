@@ -12,7 +12,7 @@ const Offers = () => {
 				Nam porttitor justo id ante lacinia faucibus. Nullam erat velit, placerat ut mollis a, venenatis vitae sapien. Vestibulum pretium arcu lorem. Ut vitae dolor eu dolor aliquam varius a id mauris. Suspendisse sollicitudin nunc vel sem vestibulum faucibus.
 			</p>
 			<div className="mt4">
-				<article className="mh4 dib mw5 bg-white br3 pa3 pa4-ns mv3 ba b--black-10">
+				<article className="shadow-4 mh4 dib mw5 bg-white br3 pa3 pa4-ns mv3 ba b--black-10">
 					<div className="tc">
 				    	<DesktopOutline
 						  color={'#00449E'} 
@@ -29,7 +29,7 @@ const Offers = () => {
 				    	roll around on the floor waiting for you give her more of them.
 				  	</p>
 				</article>
-				<article className="mh4 dib mw5 bg-white br3 pa3 pa4-ns mv3 ba b--black-10">
+				<article className="shadow-4 mh4 dib mw5 bg-white br3 pa3 pa4-ns mv3 ba b--black-10">
 					<div className="tc">
 				    	<DocumentTextOutline
 						  color={'#00449E'} 
@@ -46,7 +46,7 @@ const Offers = () => {
 				    	roll around on the floor waiting for you give her more of them.
 				  	</p>
 				</article>
-				<article className="mh4 dib mw5 bg-white br3 pa3 pa4-ns mv3 ba b--black-10">
+				<article className="shadow-4 mh4 dib mw5 bg-white br3 pa3 pa4-ns mv3 ba b--black-10">
 					<div className="tc">
 				    	<CheckmarkDoneOutline
 						  color={'#00449E'} 
