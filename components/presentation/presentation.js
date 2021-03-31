@@ -18,8 +18,8 @@ const Presentation = () => {
 	        	<p className={ styles.bgText + ' dark-blue fw8' }>
 	              Confiez-nous vos projets.
 	            </p>
-	            <div class="tc ph3">
-	              <a class="f4 grow no-underline br-pill ph3 pv2 mb2 dib white bg-dark-blue" href="#0">Voir nos offres</a>
+	            <div className="tc ph3">
+	              <a className="f4 grow no-underline br-pill ph3 pv2 mb2 dib white bg-dark-blue" href="#0">Voir nos offres</a>
 	            </div>
 	        </div>
 		</>
