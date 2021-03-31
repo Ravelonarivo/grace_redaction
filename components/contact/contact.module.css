@@ -1,0 +1,9 @@
+.formular:focus {
+	outline: none !important;
+    border: 3px solid #9EEBCF;
+    box-shadow: 0 0 10px #9EEBCF;
+}
+
+.submitButton:focus {
+	outline: none !important;
+}
