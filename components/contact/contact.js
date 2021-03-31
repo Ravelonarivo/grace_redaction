@@ -9,7 +9,7 @@ const Contact = () => {
 			<div className="bg-near-white vh-75">
 				<div className="mh7 h-100">
 					<div className="fl h-100 w-60 bg-white pv4 ph4">
-						<h3 className="tc f4 dark-blue fw5">En nous écrivrant</h3>
+						<h3 className="tc f4 dark-blue fw5">En nous écrivant</h3>
 						<form className="mt4">
 							<label htmlFor="contact-form-name" className="f5 dark-blue fw5">Nom</label>
 							<input id="contact-form-name" className={ styles.formular + ' db ba pa2 w-100 h2 mt2 mb4 b--black-20' } type="text" placeholder="Entrez votre nom" required/>
