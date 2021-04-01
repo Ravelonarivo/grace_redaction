@@ -25,7 +25,7 @@ const Layout = ({ children }) => {
 		        </div>
 		    </nav>
 		      
-		    <main className>{children}</main>
+		    <main>{children}</main>
 		      
 		    <footer className="bg-near-black white-80 pv5 ph7 vh-75">
 		    	<div className="h-100">
