@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
 		      
 		    <main className>{children}</main>
 		      
-		    <footer class="bg-near-black white-80 pv5 ph7 vh-75">
+		    <footer className="bg-near-black white-80 pv5 ph7 vh-75">
 		    	<div className="h-100">
 			    	<div className="fl w-25 h-100">
 			    		<Image
