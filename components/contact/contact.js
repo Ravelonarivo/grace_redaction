@@ -22,27 +22,33 @@ const Contact = () => {
 					</div>
 					<div className="fr h-100 w-40 bg-dark-blue pv4 ph4">
 						<h3 className="f4 light-green fw5 mb4">Ou via les réseaux sociaux</h3>
-						<Image
-							src="/facebook.svg"
-							alt="icon-facebook"
-							width={50}
-							height={50}
-						/>
-						<p className="lh-copy f5 light-green mb4"><b>facebook</b><br/>@graceredaction</p>
-						<Image
-							src="/instagram.svg"
-							alt="icon-instagram"
-							width={50}
-							height={50}
-						/>
-						<p className="lh-copy f5 light-green mb4"><b>instagram</b><br/>@graceredaction</p>
-						<Image
-							src="/twitter.svg"
-							alt="icon-twitter"
-							width={50}
-							height={50}
-						/>
-						<p className="lh-copy f5 light-green"><b>twitter</b><br/>@graceredaction</p>				
+						<a className="db link dim mb4 f5 light-green" href="#">
+							<Image
+								src="/facebook.svg"
+								alt="icon-facebook"
+								width={50}
+								height={50}
+							/>
+							<b className="db mt3 mb2">facebook</b>@graceredaction
+						</a>
+						<a className="db link dim mb4 f5 light-green" href="#">
+							<Image
+								src="/instagram.svg"
+								alt="icon-instagram"
+								width={50}
+								height={50}
+							/>
+							<b className="db mt3 mb2">instagram</b>@graceredaction
+						</a>
+						<a className="db link dim mb4 f5 light-green" href="#">
+							<Image
+								src="/twitter.svg"
+								alt="icon-twitter"
+								width={50}
+								height={50}
+							/>
+							<b className="db mt3 mb2">twitter</b>@graceredaction				
+						</a>
 					</div>
 				</div>
 			</div>
