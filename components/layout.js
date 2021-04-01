@@ -35,46 +35,43 @@ const Layout = ({ children, presentationRef, offersRef, processRef, blogRef, con
 			        />
 		        </a>
 		        <div className="db dtc-l v-mid w-100 w-75-l tc tr-l">
-			    	<a 
-			    		className="link dim f6 f5-l dib dark-blue b mr3 mr4-l ttu" 
-			    		href="#accueil" 
-			    		title="accueil"
-			    		onClick={ event => scrollToSection(event, 'accueil') }
-			    	>
-			    		Accueil
-			    	</a>
-			        <a 
-			        	className="link dim f6 f5-l dib dark-blue b mr3 mr4-l ttu" 
-			        	href="#offers" 
-			        	title="Offres"
-			        	onClick={ event => scrollToSection(event, 'offers')}
-			        >
-			        	Offres
-			        </a>
-			        <a 
-			        	className="link dim f6 f5-l dib dark-blue b mr3 mr4-l ttu" 
-			        	href="#process"
-			        	title="Processus"
-			        	onClick={ event => scrollToSection(event, 'process') }
-			        >
-			        	Processus
-			        </a>
-			        <a 
-			        	className="link dim f6 f5-l dib dark-blue b mr3 mr4-l ttu" 
-			        	href="#blog" 
-			        	title="Blog"
-			        	onClick={ event => scrollToSection(event, 'blog') }
-			        >
-			        	Blog
-			        </a>
-			        <a 
-			        	className="link dim f6 f5-l dib dark-blue b ttu" 
-			        	href="#contact" 
-			        	title="Contact"
-			        	onClick={ event => scrollToSection(event, 'contact') }
-			        >
-			        	Contact
-			        </a>
+		        	<ul>
+				    	<li 
+				    		className="pointer dim f6 f5-l dib dark-blue b mr3 mr4-l ttu" 
+				    		title="accueil"
+				    		onClick={ event => scrollToSection(event, 'accueil') }
+				    	>
+				    		Accueil
+				    	</li>
+				        <li 
+				        	className="pointer dim f6 f5-l dib dark-blue b mr3 mr4-l ttu" 
+				        	title="Offres"
+				        	onClick={ event => scrollToSection(event, 'offers')}
+				        >
+				        	Offres
+				        </li>
+				        <li 
+				        	className="pointer dim f6 f5-l dib dark-blue b mr3 mr4-l ttu" 
+				        	title="Processus"
+				        	onClick={ event => scrollToSection(event, 'process') }
+				        >
+				        	Processus
+				        </li>
+				        <li
+				        	className="pointer dim f6 f5-l dib dark-blue b mr3 mr4-l ttu" 
+				        	title="Blog"
+				        	onClick={ event => scrollToSection(event, 'blog') }
+				        >
+				        	Blog
+				        </li>
+				        <li 
+				        	className="pointer dim f6 f5-l dib dark-blue b ttu"  
+				        	title="Contact"
+				        	onClick={ event => scrollToSection(event, 'contact') }
+				        >
+				        	Contact
+				        </li>
+			        </ul>
 		        </div>
 		    </nav>
 		      
