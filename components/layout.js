@@ -86,7 +86,7 @@ const Layout = ({ children }) => {
 			    		</a>
 			    	</div>
 		    	</div>
-				<p class="f5 tc">© { date.getFullYear() } Grace Rédaction.</p>
+				<p class="f5 tc white-80 fw4">© { date.getFullYear() } Grace Rédaction.</p>
 			</footer>
 		</>
 	);
