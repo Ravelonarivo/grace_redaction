@@ -24,7 +24,7 @@ const Process = () => {
 								<div className="br-100 h3 w3 dib ba bw1 b--dark-blue pv3 f3 dark-blue fw5">1</div>
 							</div>
 							<div className="w-70">
-								<p className="ma0 lh-copy measure f5 mid-gray">
+								<p className="ma0 lh-copy measure">
 									Vous prenez contact avec nous à partir de notre formulaire 
 									de contact ou en nous écrivons un email. 
 								</p>
@@ -35,7 +35,7 @@ const Process = () => {
 								<div className="br-100 h3 w3 dib ba bw1 b--dark-blue pv3 f3 dark-blue fw5">2</div>
 							</div>
 							<div className="w-70">
-								<p className="ma0 lh-copy measure f5 mid-gray">
+								<p className="ma0 lh-copy measure">
 									Quite affectionate and outgoing.
 				    				She loves to get chin scratches and will
 								</p>
@@ -46,7 +46,7 @@ const Process = () => {
 								<div className="br-100 h3 w3 dib ba bw1 b--dark-blue pv3 f3 dark-blue fw5">3</div>
 							</div>
 							<div className="w-70">
-								<p className="ma0 lh-copy measure f5 mid-gray">
+								<p className="ma0 lh-copy measure">
 									Quite affectionate and outgoing.
 				    				She loves to get chin scratches and will
 								</p>
@@ -57,7 +57,7 @@ const Process = () => {
 								<div className="br-100 h3 w3 dib ba bw1 b--dark-blue pv3 f3 dark-blue fw5">4</div>
 							</div>
 							<div className="w-70">
-								<p className="ma0 lh-copy measure f5 mid-gray">
+								<p className="ma0 lh-copy measure">
 									Quite affectionate and outgoing.
 				    				She loves to get chin scratches and will
 								</p>

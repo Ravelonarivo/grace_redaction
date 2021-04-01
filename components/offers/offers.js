@@ -8,7 +8,7 @@ const Offers = () => {
 	return (
 		<div id="offers" className="mt5 mh7">
 			<h2 className={ homeStyles.title + ' tc f2 dark-blue fw4' }>Nous sommes une agence de rédaction</h2>
-			<p className="mh6 mid-gray f4 fw3 lh-copy">
+			<p className="mh6 f4 lh-copy">
 				Nam porttitor justo id ante lacinia faucibus. Nullam erat velit, placerat ut mollis a, venenatis vitae sapien. Vestibulum pretium arcu lorem. Ut vitae dolor eu dolor aliquam varius a id mauris. Suspendisse sollicitudin nunc vel sem vestibulum faucibus.
 			</p>
 			<div className="mt4">
@@ -23,7 +23,7 @@ const Offers = () => {
 				    	<h3 className="f4 dark-blue fw5">Rédaction</h3>
 				    	<hr className="mw3 bb bw1 b--black-10"/>
 				  	</div>
-				  	<p className="lh-copy measure center f5 mid-gray">
+				  	<p className="lh-copy measure center">
 				    	Quite affectionate and outgoing.
 				    	She loves to get chin scratches and will
 				    	roll around on the floor waiting for you give her more of them.
@@ -40,7 +40,7 @@ const Offers = () => {
 				    	<h3 className="f4 dark-blue fw5">Réécriture</h3>
 				    	<hr className="mw3 bb bw1 b--black-10"/>
 				  	</div>
-				  	<p className="lh-copy measure center f5 mid-gray">
+				  	<p className="lh-copy measure center">
 				    	Quite affectionate and outgoing.
 				    	She loves to get chin scratches and will
 				    	roll around on the floor waiting for you give her more of them.
@@ -57,7 +57,7 @@ const Offers = () => {
 				    	<h3 className="f4 dark-blue fw5">Correction</h3>
 				    	<hr className="mw3 bb bw1 b--black-10"/>
 				  	</div>
-				  	<p className="lh-copy measure center f5 mid-gray">
+				  	<p className="lh-copy measure center">
 				    	Quite affectionate and outgoing.
 				    	She loves to get chin scratches and will
 				    	roll around on the floor waiting for you give her more of them.

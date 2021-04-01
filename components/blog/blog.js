@@ -9,7 +9,7 @@ const Blog = () => {
 			<div className="dib h5 w-100 mb4 bb b--black-10">
 				<div className="fl h-100 w-60 pr1">
 					<h3 className="f4 dark-blue fw5 mt1">Quite affectionate and outgoing</h3>
-					<p className="lh-copy f5 mid-gray">
+					<p className="lh-copy">
 						Nam porttitor justo id ante lacinia faucibus. Nullam erat velit, placerat ut mollis a, venenatis vitae sapien. Vestibulum pretium arcu lorem. Ut vitae dolor eu dolor aliquam varius a id mauris. Suspendisse sollicitudin nunc vel sem vestibulum faucibus. Sed varius efficitur enim ac laoreet. Pellentesque tincidunt sem nec leo ornare faucibus.
 					</p>
 					<p class="f6 lh-copy gray mv0">Par <span class="ttu">Toto</span></p>
@@ -29,7 +29,7 @@ const Blog = () => {
 			<div className="dib h5 w-100 mb4 bb b--black-10">
 				<div className="fl h-100 w-60 pr1">
 					<h3 className="f4 dark-blue fw5 mt1">Proin sit amet lorem vitae leo feugiat posuere</h3>
-					<p className="lh-copy f5 mid-gray">
+					<p className="lh-copy">
 						Nam porttitor justo id ante lacinia faucibus. Nullam erat velit, placerat ut mollis a, venenatis vitae sapien. Vestibulum pretium arcu lorem. Ut vitae dolor eu dolor aliquam varius a id mauris. Suspendisse sollicitudin nunc vel sem vestibulum faucibus. Sed varius efficitur enim ac laoreet. Pellentesque tincidunt sem nec leo ornare faucibus.
 					</p>
 					<p class="f6 lh-copy gray mv0">Par <span class="ttu">Lulu</span></p>
@@ -49,7 +49,7 @@ const Blog = () => {
 			<div className="dib h5 w-100 mb4 bb b--black-10">
 				<div className="fl h-100 w-60 pr1">
 					<h3 className="f4 dark-blue fw5 mt1">Suspendisse sollicitudin nunc vel sem vestibulum faucibus</h3>
-					<p className="lh-copy f5 mid-gray">
+					<p className="lh-copy">
 						Nam porttitor justo id ante lacinia faucibus. Nullam erat velit, placerat ut mollis a, venenatis vitae sapien. Vestibulum pretium arcu lorem. Ut vitae dolor eu dolor aliquam varius a id mauris. Suspendisse sollicitudin nunc vel sem vestibulum faucibus. Sed varius efficitur enim ac laoreet. Pellentesque tincidunt sem nec leo ornare faucibus.
 					</p>
 					<p class="f6 lh-copy gray mv0">Par <span class="ttu">Momo</span></p>

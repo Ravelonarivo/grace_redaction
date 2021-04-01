@@ -14,3 +14,8 @@ a {
 * {
   box-sizing: border-box;
 }
+
+p {
+	color: rgba( 0, 0, 0, .5 );
+	font-weight: 500;
+}
