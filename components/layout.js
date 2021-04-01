@@ -2,8 +2,30 @@ import styles from './layout.module.css';
 import Image from 'next/image';
 import { MailOutline } from 'react-ionicons';
 
-const Layout = ({ children }) => {
+const Layout = ({ children, presentationRef, offersRef, processRef, blogRef, contactRef }) => {
 	const date = new Date();
+
+	const scroll = sectionRef => {
+		window.scrollTo({
+			top: sectionRef.current.offsetTop - 100,
+			behavior: 'smooth'
+		});
+	};
+
+	const scrollToSection = (event, sectionId) => {
+		event.preventDefault();
+		if (sectionId === presentationRef.current.id) {
+			scroll(presentationRef);
+		} else if (sectionId === offersRef.current.id) {
+			scroll(offersRef);
+		} else if (sectionId === processRef.current.id) {
+			scroll(processRef);
+		} else if (sectionId === blogRef.current.id) {
+			scroll(blogRef);
+		} else if (sectionId === contactRef.current.id) {
+			scroll(contactRef);
+		}
+	};
 
 	return (
 		<>
@@ -17,11 +39,46 @@ const Layout = ({ children }) => {
 			        />
 		        </a>
 		        <div className="db dtc-l v-mid w-100 w-75-l tc tr-l">
-			    	<a className="link dim f6 f5-l dib dark-blue b mr3 mr4-l ttu" href="#accueil" title="accueil">Accueil</a>
-			        <a className="link dim f6 f5-l dib dark-blue b mr3 mr4-l ttu" href="#offers" title="Offres">Offres</a>
-			        <a className="link dim f6 f5-l dib dark-blue b mr3 mr4-l ttu" href="#process" title="Processus">Processus</a>
-			        <a className="link dim f6 f5-l dib dark-blue b mr3 mr4-l ttu" href="#blog" title="Blog">Blog</a>
-			        <a className="link dim f6 f5-l dib dark-blue b ttu" href="#contact" title="Contact">Contact</a>
+			    	<a 
+			    		className="link dim f6 f5-l dib dark-blue b mr3 mr4-l ttu" 
+			    		href="#accueil" 
+			    		title="accueil"
+			    		onClick={ event => scrollToSection(event, 'accueil') }
+			    	>
+			    		Accueil
+			    	</a>
+			        <a 
+			        	className="link dim f6 f5-l dib dark-blue b mr3 mr4-l ttu" 
+			        	href="#offers" 
+			        	title="Offres"
+			        	onClick={ event => scrollToSection(event, 'offers')}
+			        >
+			        	Offres
+			        </a>
+			        <a 
+			        	className="link dim f6 f5-l dib dark-blue b mr3 mr4-l ttu" 
+			        	href="#process"
+			        	title="Processus"
+			        	onClick={ event => scrollToSection(event, 'process') }
+			        >
+			        	Processus
+			        </a>
+			        <a 
+			        	className="link dim f6 f5-l dib dark-blue b mr3 mr4-l ttu" 
+			        	href="#blog" 
+			        	title="Blog"
+			        	onClick={ event => scrollToSection(event, 'blog') }
+			        >
+			        	Blog
+			        </a>
+			        <a 
+			        	className="link dim f6 f5-l dib dark-blue b ttu" 
+			        	href="#contact" 
+			        	title="Contact"
+			        	onClick={ event => scrollToSection(event, 'contact') }
+			        >
+			        	Contact
+			        </a>
 		        </div>
 		    </nav>
 		      

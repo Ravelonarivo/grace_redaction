@@ -1,9 +1,9 @@
 import styles from './presentation.module.css';
 import Image from 'next/image';
 
-const Presentation = () => {
+const Presentation = ({ presentationRef }) => {
 	return (
-		<>
+		<div ref={ presentationRef } id="accueil">
 			<div className={ styles.bgWrap }>
 	            <Image
 	            	priority="true"
@@ -22,7 +22,7 @@ const Presentation = () => {
 	              <a className="f4 grow no-underline br-pill ph3 pv2 mb2 dib white bg-dark-blue" href="#0">Voir nos offres</a>
 	            </div>
 	        </div>
-		</>
+		</div>
 	);
 };
 

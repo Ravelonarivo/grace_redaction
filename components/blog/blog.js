@@ -2,9 +2,9 @@ import homeStyles from '../../styles/Home.module.css';
 import styles from './blog.module.css';
 import Image from 'next/image';
 
-const Blog = () => {
+const Blog = ({ blogRef }) => {
 	return (
-		<div id="blog" className="mt5 mh7">
+		<div ref={ blogRef } id="blog" className="mt5 mh7">
 			<h2 className={ homeStyles.title + ' tc f2 dark-blue fw4' }>Consultez notre blog</h2>
 			<div className="dib h5 w-100 mb4 bb b--black-10">
 				<div className="fl h-100 w-60 pr1">
