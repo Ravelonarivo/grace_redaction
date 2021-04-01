@@ -19,9 +19,9 @@ const Layout = ({ children }) => {
 		        <div className="db dtc-l v-mid w-100 w-75-l tc tr-l">
 			    	<a className="link dim f6 f5-l dib dark-blue b mr3 mr4-l ttu" href="#accueil" title="accueil">Accueil</a>
 			        <a className="link dim f6 f5-l dib dark-blue b mr3 mr4-l ttu" href="#offers" title="Offres">Offres</a>
-			        <a className="link dim f6 f5-l dib dark-blue b mr3 mr4-l ttu" href="#" title="Processus">Processus</a>
-			        <a className="link dim f6 f5-l dib dark-blue b mr3 mr4-l ttu" href="#" title="Blog">Blog</a>
-			        <a className="link dim f6 f5-l dib dark-blue b ttu" href="#" title="Contact">Contact</a>
+			        <a className="link dim f6 f5-l dib dark-blue b mr3 mr4-l ttu" href="#process" title="Processus">Processus</a>
+			        <a className="link dim f6 f5-l dib dark-blue b mr3 mr4-l ttu" href="#blog" title="Blog">Blog</a>
+			        <a className="link dim f6 f5-l dib dark-blue b ttu" href="#contact" title="Contact">Contact</a>
 		        </div>
 		    </nav>
 		      
@@ -86,7 +86,7 @@ const Layout = ({ children }) => {
 			    		</a>
 			    	</div>
 		    	</div>
-				<p class="f5 tc white-80 fw4">© { date.getFullYear() } Grace Rédaction.</p>
+				<p className="f5 tc white-80 fw4">© { date.getFullYear() } Grace Rédaction.</p>
 			</footer>
 		</>
 	);
