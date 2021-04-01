@@ -14,16 +14,12 @@ const Layout = ({ children, presentationRef, offersRef, processRef, blogRef, con
 
 	const scrollToSection = (event, sectionId) => {
 		event.preventDefault();
-		if (sectionId === presentationRef.current.id) {
-			scroll(presentationRef);
-		} else if (sectionId === offersRef.current.id) {
-			scroll(offersRef);
-		} else if (sectionId === processRef.current.id) {
-			scroll(processRef);
-		} else if (sectionId === blogRef.current.id) {
-			scroll(blogRef);
-		} else if (sectionId === contactRef.current.id) {
-			scroll(contactRef);
+		switch(sectionId) {
+			case presentationRef.current.id: scroll(presentationRef); break;
+			case offersRef.current.id: scroll(offersRef); break;
+			case processRef.current.id: scroll(processRef); break;
+			case blogRef.current.id: scroll(blogRef); break;
+			case contactRef.current.id: scroll(contactRef); break;
 		}
 	};
 
