@@ -12,8 +12,7 @@ const Layout = ({ children, presentationRef, offersRef, processRef, blogRef, con
 		});
 	};
 
-	const scrollToSection = (event, sectionId) => {
-		event.preventDefault();
+	const scrollToSection = sectionId => {
 		switch(sectionId) {
 			case presentationRef.current.id: scroll(presentationRef); break;
 			case offersRef.current.id: scroll(offersRef); break;
@@ -39,35 +38,35 @@ const Layout = ({ children, presentationRef, offersRef, processRef, blogRef, con
 				    	<li 
 				    		className="pointer dim f6 f5-l dib dark-blue b mr3 mr4-l ttu" 
 				    		title="accueil"
-				    		onClick={ event => scrollToSection(event, 'accueil') }
+				    		onClick={ () => scrollToSection('accueil') }
 				    	>
 				    		Accueil
 				    	</li>
 				        <li 
 				        	className="pointer dim f6 f5-l dib dark-blue b mr3 mr4-l ttu" 
 				        	title="Offres"
-				        	onClick={ event => scrollToSection(event, 'offers')}
+				        	onClick={ () => scrollToSection('offers')}
 				        >
 				        	Offres
 				        </li>
 				        <li 
 				        	className="pointer dim f6 f5-l dib dark-blue b mr3 mr4-l ttu" 
 				        	title="Processus"
-				        	onClick={ event => scrollToSection(event, 'process') }
+				        	onClick={ () => scrollToSection('process') }
 				        >
 				        	Processus
 				        </li>
 				        <li
 				        	className="pointer dim f6 f5-l dib dark-blue b mr3 mr4-l ttu" 
 				        	title="Blog"
-				        	onClick={ event => scrollToSection(event, 'blog') }
+				        	onClick={ () => scrollToSection('blog') }
 				        >
 				        	Blog
 				        </li>
 				        <li 
 				        	className="pointer dim f6 f5-l dib dark-blue b ttu"  
 				        	title="Contact"
-				        	onClick={ event => scrollToSection(event, 'contact') }
+				        	onClick={ () => scrollToSection('contact') }
 				        >
 				        	Contact
 				        </li>
