@@ -17,7 +17,7 @@ const Layout = ({ children }) => {
 			        />
 		        </a>
 		        <div className="db dtc-l v-mid w-100 w-75-l tc tr-l">
-			    	<a className="link dim f6 f5-l dib dark-blue b mr3 mr4-l" href="#presentation" title="presentation">Accueil</a>
+			    	<a className="link dim f6 f5-l dib dark-blue b mr3 mr4-l" href="#accueil" title="accueil">Accueil</a>
 			        <a className="link dim f6 f5-l dib dark-blue b mr3 mr4-l" href="#offers" title="Offres">Offres</a>
 			        <a className="link dim f6 f5-l dib dark-blue b mr3 mr4-l" href="#" title="Processus">Processus</a>
 			        <a className="link dim f6 f5-l dib dark-blue b mr3 mr4-l" href="#" title="Blog">Blog</a>
