@@ -15,7 +15,7 @@ const Presentation = () => {
 	            />
 	        </div>
 	        <div className={ styles.bgTextAndButton }>
-	        	<h1 className={ styles.bgText + ' dark-blue fw8' }>
+	        	<h1 className={ styles.bgText + ' dark-blue fw8 ttu' }>
 	              Confiez-nous vos projets.
 	            </h1>
 	            <div className="tc ph3">
