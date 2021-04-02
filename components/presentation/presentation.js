@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const Presentation = ({ presentationSectionRef }) => {
 	return (
-		<div ref={ presentationSectionRef } id="accueil">
+		<div ref={ presentationSectionRef } id="presentation">
 			<div className={ styles.bgWrap }>
 	            <Image
 	            	priority="true"

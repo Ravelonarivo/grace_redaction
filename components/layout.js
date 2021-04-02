@@ -2,11 +2,21 @@ import styles from './layout.module.css';
 import Image from 'next/image';
 import { MailOutline } from 'react-ionicons';
 
-const Layout = ({ children, presentationSectionRef, offersSectionRef, processSectionRef, blogSectionRef, contactSectionRef }) => {
+import { useRef, useEffect } from 'react';
+
+const Layout = ({ children, sectionRefs }) => {
 	const date = new Date();
 
+	const presentationNavRef = useRef(null)
+	const offersNavRef = useRef(null);
+	const processNavRef = useRef(null);
+	const blogNavRef = useRef(null);
+	const contactNavRef = useRef(null);
+
+	const navRefs = [presentationNavRef, offersNavRef, processNavRef, blogNavRef, contactNavRef];
+
 	const scrollToSection = sectionId => {
-		for (const sectionRef of [presentationSectionRef, offersSectionRef, processSectionRef, blogSectionRef, contactSectionRef]) {
+		for (const sectionRef of sectionRefs) {
 			if (sectionId === sectionRef.current.id) {
 				window.scrollTo({
 					top: sectionRef.current.offsetTop - 100,
@@ -16,6 +26,27 @@ const Layout = ({ children, presentationSectionRef, offersSectionRef, processSec
 			} 
 		}
 	};
+
+	const highlightNav = () => {
+		sectionRefs.forEach(sectionRef => {
+			const sectionRefTop = Math.round(sectionRef.current.getBoundingClientRect().top);	
+			const sectionRefBottom = Math.round(sectionRef.current.getBoundingClientRect().bottom);
+			if ((sectionRefTop > 0 && sectionRefTop <= 100) || (sectionRefBottom >= 100 && sectionRefBottom <= (window.innerHeight || document.documentElement.clientHeight))) {
+				navRefs.forEach(navRef => {
+					if (navRef.current.id === sectionRef.current.id) {
+						navRef.current.classList.add('is-active');
+					} else {
+						navRef.current.classList.remove('is-active');
+					}
+				});
+			}
+		});
+	};
+
+	useEffect(() => {
+		window.addEventListener('scroll', highlightNav);
+		return () => window.removeEventListener('scroll', highlightNav);
+	});
 
 	return (
 		<>
@@ -31,37 +62,47 @@ const Layout = ({ children, presentationSectionRef, offersSectionRef, processSec
 		        <div className="db dtc-l v-mid w-100 w-75-l tc tr-l">
 		        	<ul>
 				    	<li 
-				    		className="pointer dim f6 f5-l dib dark-blue b mr3 mr4-l ttu" 
+				    		ref={ presentationNavRef }
+				    		id="presentation"
+				    		className="pb2 pointer dim f6 f5-l dib dark-blue b mr3 mr4-l ttu" 
 				    		title="accueil"
-				    		onClick={ () => scrollToSection('accueil') }
+				    		onClick={ () => scrollToSection(presentationNavRef.current.id) }
 				    	>
 				    		Accueil
 				    	</li>
 				        <li 
-				        	className="pointer dim f6 f5-l dib dark-blue b mr3 mr4-l ttu" 
+				        	ref={ offersNavRef }
+				        	id="offers"
+				        	className="pb2 pointer dim f6 f5-l dib dark-blue b mr3 mr4-l ttu" 
 				        	title="Offres"
-				        	onClick={ () => scrollToSection('offers')}
+				        	onClick={ () => scrollToSection(offersNavRef.current.id)}
 				        >
 				        	Offres
 				        </li>
 				        <li 
-				        	className="pointer dim f6 f5-l dib dark-blue b mr3 mr4-l ttu" 
+				        	ref={ processNavRef }
+				        	id="process"
+				        	className="pb2 pointer dim f6 f5-l dib dark-blue b mr3 mr4-l ttu" 
 				        	title="Processus"
-				        	onClick={ () => scrollToSection('process') }
+				        	onClick={ () => scrollToSection(processNavRef.current.id) }
 				        >
 				        	Processus
 				        </li>
 				        <li
-				        	className="pointer dim f6 f5-l dib dark-blue b mr3 mr4-l ttu" 
+				        	ref={ blogNavRef }
+				        	id="blog"
+				        	className="pb2 pointer dim f6 f5-l dib dark-blue b mr3 mr4-l ttu" 
 				        	title="Blog"
-				        	onClick={ () => scrollToSection('blog') }
+				        	onClick={ () => scrollToSection(blogNavRef.current.id) }
 				        >
 				        	Blog
 				        </li>
 				        <li 
-				        	className="pointer dim f6 f5-l dib dark-blue b ttu"  
+				        	ref={ contactNavRef }
+				        	id="contact"
+				        	className="pb2 pointer dim f6 f5-l dib dark-blue b ttu"  
 				        	title="Contact"
-				        	onClick={ () => scrollToSection('contact') }
+				        	onClick={ () => scrollToSection(contactNavRef.current.id) }
 				        >
 				        	Contact
 				        </li>
@@ -132,6 +173,11 @@ const Layout = ({ children, presentationSectionRef, offersSectionRef, processSec
 		    	</div>
 				<p className="f5 tc white-80 fw4">© { date.getFullYear() } Grace Rédaction.</p>
 			</footer>
+			<style jsx>{`
+				.is-active {
+					border-bottom: 4px dotted #00449E;
+				}
+			`}</style>
 		</>
 	);
 };

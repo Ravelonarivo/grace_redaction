@@ -15,13 +15,11 @@ const Home = () => {
   const blogSectionRef = useRef(null);
   const contactSectionRef = useRef(null);
 
+  const sectionRefs = [presentationSectionRef, offersSectionRef, processSectionRef, blogSectionRef, contactSectionRef]; 
+  
   return (
     <Layout 
-      presentationSectionRef={ presentationSectionRef }
-      offersSectionRef={ offersSectionRef }
-      processSectionRef={ processSectionRef }
-      blogSectionRef={ blogSectionRef }
-      contactSectionRef={ contactSectionRef }
+      sectionRefs={ sectionRefs   }
     >
       <Head>
         <title>Home</title>
