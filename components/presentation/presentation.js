@@ -1,9 +1,9 @@
 import styles from './presentation.module.css';
 import Image from 'next/image';
 
-const Presentation = ({ presentationRef }) => {
+const Presentation = ({ presentationSectionRef }) => {
 	return (
-		<div ref={ presentationRef } id="accueil">
+		<div ref={ presentationSectionRef } id="accueil">
 			<div className={ styles.bgWrap }>
 	            <Image
 	            	priority="true"

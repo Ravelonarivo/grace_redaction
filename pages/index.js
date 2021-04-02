@@ -9,30 +9,30 @@ import Contact from '../components/contact/contact';
 import { useRef } from 'react';
 
 const Home = () => {
-  const presentationRef = useRef(null);
-  const offersRef = useRef(null);
-  const processRef = useRef(null);
-  const blogRef = useRef(null);
-  const contactRef = useRef(null);
+  const presentationSectionRef = useRef(null);
+  const offersSectionRef = useRef(null);
+  const processSectionRef = useRef(null);
+  const blogSectionRef = useRef(null);
+  const contactSectionRef = useRef(null);
 
   return (
     <Layout 
-      presentationRef={ presentationRef }
-      offersRef={ offersRef }
-      processRef={ processRef }
-      blogRef={ blogRef }
-      contactRef={ contactRef }
+      presentationSectionRef={ presentationSectionRef }
+      offersSectionRef={ offersSectionRef }
+      processSectionRef={ processSectionRef }
+      blogSectionRef={ blogSectionRef }
+      contactSectionRef={ contactSectionRef }
     >
       <Head>
         <title>Home</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Presentation presentationRef={ presentationRef } />
-      <Offers offersRef={ offersRef } />  
-      <Process processRef={ processRef } />
-      <Blog blogRef={ blogRef } />
-      <Contact contactRef={ contactRef } />
+      <Presentation presentationSectionRef={ presentationSectionRef } />
+      <Offers offersSectionRef={ offersSectionRef } />  
+      <Process processSectionRef={ processSectionRef } />
+      <Blog blogSectionRef={ blogSectionRef } />
+      <Contact contactSectionRef={ contactSectionRef } />
     </Layout>
   );
 };

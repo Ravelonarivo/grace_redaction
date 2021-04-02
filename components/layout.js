@@ -2,23 +2,18 @@ import styles from './layout.module.css';
 import Image from 'next/image';
 import { MailOutline } from 'react-ionicons';
 
-const Layout = ({ children, presentationRef, offersRef, processRef, blogRef, contactRef }) => {
+const Layout = ({ children, presentationSectionRef, offersSectionRef, processSectionRef, blogSectionRef, contactSectionRef }) => {
 	const date = new Date();
 
-	const scroll = sectionRef => {
-		window.scrollTo({
-			top: sectionRef.current.offsetTop - 100,
-			behavior: 'smooth'
-		});
-	};
-
 	const scrollToSection = sectionId => {
-		switch(sectionId) {
-			case presentationRef.current.id: scroll(presentationRef); break;
-			case offersRef.current.id: scroll(offersRef); break;
-			case processRef.current.id: scroll(processRef); break;
-			case blogRef.current.id: scroll(blogRef); break;
-			case contactRef.current.id: scroll(contactRef); break;
+		for (const sectionRef of [presentationSectionRef, offersSectionRef, processSectionRef, blogSectionRef, contactSectionRef]) {
+			if (sectionId === sectionRef.current.id) {
+				window.scrollTo({
+					top: sectionRef.current.offsetTop - 100,
+					behavior: 'smooth'
+				});
+				break;
+			} 
 		}
 	};
 

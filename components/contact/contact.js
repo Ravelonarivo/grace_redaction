@@ -2,9 +2,9 @@ import styles from './contact.module.css';
 import homeStyles from '../../styles/Home.module.css';
 import Image from 'next/image'
 
-const Contact = ({ contactRef }) => {
+const Contact = ({ contactSectionRef }) => {
 	return (
-		<div ref={ contactRef } id="contact" className="mt5">
+		<div ref={ contactSectionRef } id="contact" className="mt5">
 			<h2 className={ homeStyles.title + ' tc f2 dark-blue fw4' }>Entrez en contact avec nous</h2>
 			<div className="bg-near-white vh-75">
 				<div className="mh7 h-100">

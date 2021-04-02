@@ -2,9 +2,9 @@ import styles from './process.module.css';
 import homeStyles from '../../styles/Home.module.css';
 import Image from 'next/image';
 
-const Process = ({ processRef }) => {
+const Process = ({ processSectionRef }) => {
 	return (
-		<div ref={ processRef } id="process" className="mt5">
+		<div ref={ processSectionRef } id="process" className="mt5">
 			<h2 className={ homeStyles.title + ' tc f2 dark-blue fw4' }>Comment nous procédons</h2>
 			<div className="bg-near-white vh-75">
 				<div className="mh7 h-100">
