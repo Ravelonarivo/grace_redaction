@@ -41,7 +41,7 @@ const Layout = ({ children, sectionRefs }) => {
 	return (
 		<>
 			<nav className={ styles.sticky + ' db dt-l w-100 border-box pa3 ph7-l bg-white shadow-3' }>
-		        <a className="link dim" href="#" title="Home">
+		        <a className="link dim" href="#" title="Aller à la page d'Accueil">
 		          	<Image
 			            src="/logos/logo_2.png"
 			            height={60}
@@ -55,7 +55,6 @@ const Layout = ({ children, sectionRefs }) => {
 				    		ref={ presentationNavRef }
 				    		id="presentation"
 				    		className="pb2 pointer dim f6 f5-l dib dark-blue b mr3 mr4-l ttu" 
-				    		title="accueil"
 				    		onClick={ () => scrollToSection(presentationNavRef.current.id, sectionRefs) }
 				    	>
 				    		Accueil
@@ -64,7 +63,6 @@ const Layout = ({ children, sectionRefs }) => {
 				        	ref={ offersNavRef }
 				        	id="offers"
 				        	className="pb2 pointer dim f6 f5-l dib dark-blue b mr3 mr4-l ttu" 
-				        	title="Offres"
 				        	onClick={ () => scrollToSection(offersNavRef.current.id, sectionRefs)}
 				        >
 				        	Offres
@@ -73,7 +71,6 @@ const Layout = ({ children, sectionRefs }) => {
 				        	ref={ processNavRef }
 				        	id="process"
 				        	className="pb2 pointer dim f6 f5-l dib dark-blue b mr3 mr4-l ttu" 
-				        	title="Processus"
 				        	onClick={ () => scrollToSection(processNavRef.current.id, sectionRefs) }
 				        >
 				        	Processus
@@ -82,7 +79,6 @@ const Layout = ({ children, sectionRefs }) => {
 				        	ref={ blogNavRef }
 				        	id="blog"
 				        	className="pb2 pointer dim f6 f5-l dib dark-blue b mr3 mr4-l ttu" 
-				        	title="Blog"
 				        	onClick={ () => scrollToSection(blogNavRef.current.id, sectionRefs) }
 				        >
 				        	Blog
@@ -91,7 +87,6 @@ const Layout = ({ children, sectionRefs }) => {
 				        	ref={ contactNavRef }
 				        	id="contact"
 				        	className="pb2 pointer dim f6 f5-l dib dark-blue b ttu"  
-				        	title="Contact"
 				        	onClick={ () => scrollToSection(contactNavRef.current.id, sectionRefs) }
 				        >
 				        	Contact

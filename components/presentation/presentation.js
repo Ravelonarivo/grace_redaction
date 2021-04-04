@@ -24,7 +24,6 @@ const Presentation = ({ presentationSectionRef, sectionRefs }) => {
 	              	<ul>
 	              		<li 
 	              			className="pointer f4 grow no-underline br-pill ph3 pv2 mb2 dib white bg-dark-blue" 
-	              			title="voir nos offres"
 	              			onClick={ () => scrollToSection('offers', sectionRefs) }
 	              		> 
 	              			Voir nos offres

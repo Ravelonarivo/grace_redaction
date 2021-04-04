@@ -27,7 +27,7 @@ const Contact = ({ contactSectionRef }) => {
 								<input id="contact-form-email" className={ styles.formular + ' db ba pa2 w-100 h2 mt2 mb4 b--black-20 br2' } type="email" placeholder="Entrez votre adresse email" required/>
 								<label  htmlFor="contact-form-message" className="f5 white fw5">Message</label>
 								<textarea id="contact-form-message" className={ styles.formular + ' db pa2 w-100 h4 mt2 mb4 b--black-20 br2' } placeholder="Entrez votre message" required/>
-								<input className={ styles.submitButton + ' br-pill grow f5 white fw5 h2 ph4 bg-dark-blue b--dark-blue ba pb2' } type="submit" value="Envoyer"/>
+								<input className={ styles.submitButton + ' pointer br-pill grow f5 white fw5 h2 ph4 bg-dark-blue b--dark-blue ba pb2' } type="submit" value="Envoyer"/>
 							</form>
 						</div>
 						<div className={ styles.subTitle + " fr h-100 w-40 bg-dark-blue pv4 ph4 br--top br4" }>
