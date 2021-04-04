@@ -1,7 +1,7 @@
 .formular:focus {
 	outline: none !important;
-    border: 3px solid #9EEBCF;
-    box-shadow: 0 0 10px #9EEBCF;
+    border: 3px solid #AEE4F3;
+    box-shadow: 0 0 10px #AEE4F3;
 }
 
 .submitButton:focus {
@@ -22,4 +22,8 @@
     width: 100px;
     margin: 0 auto;
     margin-top: 30px;
+}
+
+.subTitle {
+	color: #AEE4F3;
 }

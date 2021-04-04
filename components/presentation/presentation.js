@@ -15,7 +15,7 @@ const Presentation = ({ presentationSectionRef }) => {
 	            />
 	        </div>
 	        <div className={ styles.bgTextAndButton }>
-	        	<h1 className={ styles.bgText + ' dark-blue fw8 ttu' }>
+	        	<h1 className={ styles.bgText + ' fw8 ttu bg-dark-blue white pa2 o-90 br-pill' }>
 	              Confiez-nous vos projets.
 	            </h1>
 	            <div className="tc ph3">

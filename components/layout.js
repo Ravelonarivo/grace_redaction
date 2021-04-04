@@ -51,7 +51,7 @@ const Layout = ({ children, sectionRefs }) => {
 	return (
 		<>
 			<nav className={ styles.sticky + ' db dt-l w-100 border-box pa3 ph7-l bg-white shadow-3' }>
-		        <a className="db dtc-l v-mid mid-gray link dim w-100 w-25-l tc tl-l mb2 mb0-l" href="#" title="Home">
+		        <a className="link dim" href="#" title="Home">
 		          	<Image
 			            src="/logos/logo_2.png"
 			            height={60}

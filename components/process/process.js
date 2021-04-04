@@ -56,6 +56,7 @@ const Process = ({ processSectionRef }) => {
 					</div>
 					<div className="fr relative h-100 w-60">
 						<Image
+							priority="true"
 				        	src="/blob_2.png"
 				            alt="blob-image"
 				            width="600"
