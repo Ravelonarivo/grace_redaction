@@ -26,7 +26,10 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Presentation presentationSectionRef={ presentationSectionRef } />
+      <Presentation 
+        presentationSectionRef={ presentationSectionRef } 
+        sectionRefs={ sectionRefs }
+      />
       <Offers offersSectionRef={ offersSectionRef } />  
       <Process processSectionRef={ processSectionRef } />
       <Blog blogSectionRef={ blogSectionRef } />

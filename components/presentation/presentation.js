@@ -1,7 +1,9 @@
 import styles from './presentation.module.css';
 import Image from 'next/image';
 
-const Presentation = ({ presentationSectionRef }) => {
+import { scrollToSection } from '../../lib/functions';
+
+const Presentation = ({ presentationSectionRef, sectionRefs }) => {
 	return (
 		<div ref={ presentationSectionRef } id="presentation" className={ styles.background }>
 			<div className={ styles.bgWrap }>
@@ -16,10 +18,18 @@ const Presentation = ({ presentationSectionRef }) => {
 	        </div>
 	        <div className={ styles.bgTextAndButton }>
 	        	<h1 className={ styles.bgText + ' fw8 ttu bg-dark-blue white pa2 o-90 br-pill' }>
-	              Confiez-nous vos projets.
+	              	Confiez-nous vos projets.
 	            </h1>
 	            <div className="tc ph3">
-	              <a className="f4 grow no-underline br-pill ph3 pv2 mb2 dib white bg-dark-blue" href="#0">Voir nos offres</a>
+	              	<ul>
+	              		<li 
+	              			className="pointer f4 grow no-underline br-pill ph3 pv2 mb2 dib white bg-dark-blue" 
+	              			title="voir nos offres"
+	              			onClick={ () => scrollToSection('offers', sectionRefs) }
+	              		> 
+	              			Voir nos offres
+	              		</li>
+	              	</ul>
 	            </div>
 	        </div>	
 		</div>

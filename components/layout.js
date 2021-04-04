@@ -4,6 +4,8 @@ import { MailOutline } from 'react-ionicons';
 
 import { useRef, useEffect } from 'react';
 
+import { scrollToSection } from '../lib/functions';
+
 const Layout = ({ children, sectionRefs }) => {
 	const date = new Date();
 
@@ -14,18 +16,6 @@ const Layout = ({ children, sectionRefs }) => {
 	const contactNavRef = useRef(null);
 
 	const navRefs = [presentationNavRef, offersNavRef, processNavRef, blogNavRef, contactNavRef];
-
-	const scrollToSection = sectionId => {
-		for (const sectionRef of sectionRefs) {
-			if (sectionId === sectionRef.current.id) {
-				window.scrollTo({
-					top: sectionRef.current.offsetTop - 100,
-					behavior: 'smooth'
-				});
-				break;
-			} 
-		}
-	};
 
 	const highlightNav = () => {
 		sectionRefs.forEach(sectionRef => {
@@ -66,7 +56,7 @@ const Layout = ({ children, sectionRefs }) => {
 				    		id="presentation"
 				    		className="pb2 pointer dim f6 f5-l dib dark-blue b mr3 mr4-l ttu" 
 				    		title="accueil"
-				    		onClick={ () => scrollToSection(presentationNavRef.current.id) }
+				    		onClick={ () => scrollToSection(presentationNavRef.current.id, sectionRefs) }
 				    	>
 				    		Accueil
 				    	</li>
@@ -75,7 +65,7 @@ const Layout = ({ children, sectionRefs }) => {
 				        	id="offers"
 				        	className="pb2 pointer dim f6 f5-l dib dark-blue b mr3 mr4-l ttu" 
 				        	title="Offres"
-				        	onClick={ () => scrollToSection(offersNavRef.current.id)}
+				        	onClick={ () => scrollToSection(offersNavRef.current.id, sectionRefs)}
 				        >
 				        	Offres
 				        </li>
@@ -84,7 +74,7 @@ const Layout = ({ children, sectionRefs }) => {
 				        	id="process"
 				        	className="pb2 pointer dim f6 f5-l dib dark-blue b mr3 mr4-l ttu" 
 				        	title="Processus"
-				        	onClick={ () => scrollToSection(processNavRef.current.id) }
+				        	onClick={ () => scrollToSection(processNavRef.current.id, sectionRefs) }
 				        >
 				        	Processus
 				        </li>
@@ -93,7 +83,7 @@ const Layout = ({ children, sectionRefs }) => {
 				        	id="blog"
 				        	className="pb2 pointer dim f6 f5-l dib dark-blue b mr3 mr4-l ttu" 
 				        	title="Blog"
-				        	onClick={ () => scrollToSection(blogNavRef.current.id) }
+				        	onClick={ () => scrollToSection(blogNavRef.current.id, sectionRefs) }
 				        >
 				        	Blog
 				        </li>
@@ -102,7 +92,7 @@ const Layout = ({ children, sectionRefs }) => {
 				        	id="contact"
 				        	className="pb2 pointer dim f6 f5-l dib dark-blue b ttu"  
 				        	title="Contact"
-				        	onClick={ () => scrollToSection(contactNavRef.current.id) }
+				        	onClick={ () => scrollToSection(contactNavRef.current.id, sectionRefs) }
 				        >
 				        	Contact
 				        </li>
