@@ -175,7 +175,7 @@ const Layout = ({ children, sectionRefs }) => {
 			</footer>
 			<style jsx>{`
 				.is-active {
-					border-bottom: 4px dotted #00449E;
+					border-bottom: 4px solid #AEE4F3;
 				}
 			`}</style>
 		</>

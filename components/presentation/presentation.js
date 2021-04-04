@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const Presentation = ({ presentationSectionRef }) => {
 	return (
-		<div ref={ presentationSectionRef } id="presentation">
+		<div ref={ presentationSectionRef } id="presentation" className={ styles.background }>
 			<div className={ styles.bgWrap }>
 	            <Image
 	            	priority="true"
@@ -21,7 +21,7 @@ const Presentation = ({ presentationSectionRef }) => {
 	            <div className="tc ph3">
 	              <a className="f4 grow no-underline br-pill ph3 pv2 mb2 dib white bg-dark-blue" href="#0">Voir nos offres</a>
 	            </div>
-	        </div>
+	        </div>	
 		</div>
 	);
 };
