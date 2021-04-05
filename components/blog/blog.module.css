@@ -1,4 +1,8 @@
-.bgWrap {
-   	overflow: hidden;
+.blob {
+  	transform: translate(-1%, -73%);
   	z-index: 0;
+}
+
+.image {
+	z-index: 1;
 }

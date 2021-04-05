@@ -15,16 +15,25 @@ const Blog = ({ blogSectionRef }) => {
 					<p className="f6 lh-copy gray mv0">Par <span className="ttu">Toto</span></p>
     				<time className="f6 db gray">21 Mars 2021</time>
 				</div>
-				<div className={ styles.bgWrap + ' fr relative h-75 w-40' }>
+				<div className="fr h-100 w-40 tc">
 					<Image
-			            priority="true"
-				        src="/background_1.jpg"
-				        layout="fill"
-				        objectFit="cover"
-				        quality={100}
-				        alt="background_1"
-			        />
-				</div>
+						className={ styles.image + ' br-100'}
+				        priority="true"
+					    src="/background_1.jpg"
+					    width={ 200 }
+					    height={ 200 }
+					    alt="background_1"
+				    />
+				    <div className={ styles.blob + ' relative' }>
+				    	<Image
+							priority="true"
+				        	src="/blob_test.svg"
+				            alt="blob-test"
+				            width={ 700 }
+				            height={ 700 }
+			            />
+				    </div>
+			    </div>
 			</div>
 			<div className="dib h5 w-100 mb4 ba b--black-10 pa3 br3 shadow-4">
 				<div className="fl h-100 w-60 pr1">
@@ -35,13 +44,13 @@ const Blog = ({ blogSectionRef }) => {
 					<p className="f6 lh-copy gray mv0">Par <span className="ttu">Lulu</span></p>
     				<time className="f6 db gray">10 Mars 2021</time>
 				</div>
-				<div className={ styles.bgWrap + ' fr relative h-75 w-40' }>
+				<div className="fr h-100 w-40 tc">
 					<Image
+						className="br-100"
 			            priority="true"
 				        src="/background_2.jpg"
-				        layout="fill"
-				        objectFit="cover"
-				        quality={100}
+				        width={ 200 }
+					    height={ 200 }
 				        alt="background_2"
 			        />
 				</div>
@@ -55,12 +64,13 @@ const Blog = ({ blogSectionRef }) => {
 					<p className="f6 lh-copy gray mv0">Par <span className="ttu">Momo</span></p>
     				<time className="f6 db gray">04 Février 2021</time>
 				</div>
-				<div className={ styles.bgWrap + ' fr relative h-75 w-40' }>
+				<div className="fr h-100 w-40 tc">
 					<Image
+						className="br-100"
 			            priority="true"
 				        src="/presentation_background.jpg"
-				        layout="fill"
-				        objectFit="cover"
+				        width={ 200 }
+					    height={ 200 }
 				        quality={100}
 				        alt="presentation-image"
 			        />
