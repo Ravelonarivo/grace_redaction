@@ -6,3 +6,25 @@
 .image {
 	z-index: 1;
 }
+
+.title:after {
+	display: block;
+    height: 4px;
+    background-color: #A463F2;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.title {
+    color: #A463F2;
+}
+
+.subTitle {
+	color: #FF005C;
+}
+
+.background {
+	background-color: #FBF9FA;
+}

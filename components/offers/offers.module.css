@@ -1,3 +1,25 @@
-.backgroundColor {
-    background-color: #AEE4F3;
+.backgroundColor_1 {
+    background-color: #93329E;
+}
+
+.backgroundColor_2 {
+    background-color: #FF005C;
+}
+
+.backgroundColor_3 {
+    background-color: #A463F2;
+}
+
+.title {
+    color: #93329E;
+}
+
+.title:after {
+    display: block;
+    height: 4px;
+    background-color: #93329E;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
 }

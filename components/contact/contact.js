@@ -15,7 +15,7 @@ const Contact = ({ contactSectionRef }) => {
 				<path d="M 0,400 C 0,400 0,200 0,200 C 52.041605301914586,165.5 104.08321060382917,131 164,147 C 223.91678939617083,163 291.7087628865979,229.5 347,260 C 402.2912371134021,290.5 445.0817378497791,285 513,271 C 580.9182621502209,257 673.9642857142858,234.5 732,231 C 790.0357142857142,227.5 813.0611192930779,243.00000000000003 871,248 C 928.9388807069221,252.99999999999997 1021.7912371134023,247.5 1083,232 C 1144.2087628865977,216.5 1173.7739322533137,191 1228,184 C 1282.2260677466863,177 1361.1130338733433,188.5 1440,200 C 1440,200 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="url(#gradient)" className="transition-all duration-300 ease-in-out delay-150"></path>
 			</svg>
 			<div ref={ contactSectionRef } id="contact" className={ styles.background }>
-				<h2 className={ styles.title + ' tc f2 white fw4 mt0' }>Entrez en contact avec nous</h2>
+				<h2 className={ styles.title + ' tc f2 white fw5 mt0' }>Entrez en contact avec nous</h2>
 				<div className="vh-75">
 					<div className="mh7 h-100">
 						<div className="fl h-100 w-60 pv4 ph4">

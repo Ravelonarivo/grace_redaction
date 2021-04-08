@@ -23,7 +23,7 @@ const Presentation = ({ presentationSectionRef, sectionRefs }) => {
 	            <div className="tc ph3">
 	              	<ul>
 	              		<li 
-	              			className="pointer f4 grow no-underline br-pill ph3 pv2 mb2 dib white bg-dark-blue" 
+	              			className="pointer f4 grow no-underline br-pill ph3 pv2 mb2 dib bg-dark-blue white" 
 	              			onClick={ () => scrollToSection('offers', sectionRefs) }
 	              		> 
 	              			Voir nos offres
