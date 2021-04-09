@@ -12,8 +12,8 @@ const Blog = ({ blogSectionRef }) => {
 					<p className="lh-copy">
 						Nam porttitor justo id ante lacinia faucibus. Nullam erat velit, placerat ut mollis a, venenatis vitae sapien. Vestibulum pretium arcu lorem. Ut vitae dolor eu dolor aliquam varius a id mauris. Suspendisse sollicitudin nunc vel sem vestibulum faucibus. Sed varius efficitur enim ac laoreet.
 					</p>
-					<p className="f6 lh-copy dark-blue mv0">Par <span className="ttu">Toto</span></p>
-    				<time className="f6 db dark-blue fw5">21 Mars 2021</time>
+					<p className={ styles.color + ' f6 lh-copy dark-blue mv0' }>Par <span className="ttu">Toto</span></p>
+    				<time className={ styles.color + ' f6 db dark-blue fw5' }>21 Mars 2021</time>
 				</div>
 				<div className="fr h-100 w-30 tc pv2">
 					<Image
@@ -32,8 +32,8 @@ const Blog = ({ blogSectionRef }) => {
 					<p className="lh-copy">
 						Nam porttitor justo id ante lacinia faucibus. Nullam erat velit, placerat ut mollis a, venenatis vitae sapien. Vestibulum pretium arcu lorem. Ut vitae dolor eu dolor aliquam varius a id mauris. Suspendisse sollicitudin nunc vel sem vestibulum faucibus. Sed varius efficitur enim ac laoreet.
 					</p>
-					<p className="f6 lh-copy dark-blue mv0">Par <span className="ttu">Lulu</span></p>
-    				<time className="f6 db dark-blue fw5">10 Mars 2021</time>
+					<p className={ styles.color + ' f6 lh-copy dark-blue mv0' }>Par <span className="ttu">Lulu</span></p>
+    				<time className={ styles.color + ' f6 db dark-blue fw5' }>10 Mars 2021</time>
 				</div>
 				<div className="fr h-100 w-30 tc pv2">
 					<Image
@@ -51,9 +51,9 @@ const Blog = ({ blogSectionRef }) => {
 					<h3 className={ styles.subTitle + ' f4 fw5 mt1' }>Suspendisse sollicitudin nunc vel sem vestibulum faucibus</h3>
 					<p className="lh-copy">
 						Nam porttitor justo id ante lacinia faucibus. Nullam erat velit, placerat ut mollis a, venenatis vitae sapien. Vestibulum pretium arcu lorem. Ut vitae dolor eu dolor aliquam varius a id mauris. Suspendisse sollicitudin nunc vel sem vestibulum faucibus. Sed varius efficitur enim ac laoreet.
-					</p>
-					<p className="f6 lh-copy dark-blue mv0">Par <span className="ttu">Momo</span></p>
-    				<time className="f6 db dark-blue fw5">04 Février 2021</time>
+					</p> 
+					<p className={ styles.color + ' f6 lh-copy dark-blue mv0' }>Par <span className="ttu">Momo</span></p>
+    				<time className={ styles.color + ' f6 db dark-blue fw5' }>04 Février 2021</time>
 				</div>
 				<div className="fr h-100 w-30 tc pv2">
 					<Image

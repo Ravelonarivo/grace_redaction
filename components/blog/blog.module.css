@@ -10,7 +10,7 @@
 .title:after {
 	display: block;
     height: 4px;
-    background-color: #A463F2;
+    background-color: #93329E;
     content: " ";
     width: 100px;
     margin: 0 auto;
@@ -18,7 +18,7 @@
 }
 
 .title {
-    color: #A463F2;
+    color: #93329E;
 }
 
 .subTitle {
@@ -27,4 +27,8 @@
 
 .background {
 	background-color: #FFFFFF;
+}
+
+.color {
+	color: #A463F2;
 }
