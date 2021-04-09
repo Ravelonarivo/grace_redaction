@@ -40,10 +40,10 @@ const Layout = ({ children, sectionRefs }) => {
 
 	return (
 		<>
-			<nav className={ styles.sticky + ' db dt-l w-100 border-box pa3 ph7-l bg-white shadow-3' }>
+			<nav className={ styles.sticky + ' db dt-l w-100 border-box pa3 ph7-l shadow-3' }>
 		        <a className="link dim" href="#" title="Aller à la page d'Accueil">
 		          	<Image
-			            src="/logos/logo_2.png"
+			            src="/logos/logo_5.png"
 			            height={60}
 			            width={60}
 			            alt="logo-nav"
@@ -54,7 +54,7 @@ const Layout = ({ children, sectionRefs }) => {
 				    	<li 
 				    		ref={ presentationNavRef }
 				    		id="presentation"
-				    		className="pb2 pointer dim f6 f5-l dib dark-blue b mr3 mr4-l ttu" 
+				    		className={ styles.nav + ' pb2 pointer dim f6 f5-l dib b mr3 mr4-l ttu' }
 				    		onClick={ () => scrollToSection(presentationNavRef.current.id, sectionRefs) }
 				    	>
 				    		Accueil
@@ -62,7 +62,7 @@ const Layout = ({ children, sectionRefs }) => {
 				        <li 
 				        	ref={ offersNavRef }
 				        	id="offers"
-				        	className="pb2 pointer dim f6 f5-l dib dark-blue b mr3 mr4-l ttu" 
+				        	className={ styles.nav + ' pb2 pointer dim f6 f5-l dib b mr3 mr4-l ttu' } 
 				        	onClick={ () => scrollToSection(offersNavRef.current.id, sectionRefs)}
 				        >
 				        	Offres
@@ -70,7 +70,7 @@ const Layout = ({ children, sectionRefs }) => {
 				        <li 
 				        	ref={ processNavRef }
 				        	id="process"
-				        	className="pb2 pointer dim f6 f5-l dib dark-blue b mr3 mr4-l ttu" 
+				        	className={ styles.nav + ' pb2 pointer dim f6 f5-l dib b mr3 mr4-l ttu' } 
 				        	onClick={ () => scrollToSection(processNavRef.current.id, sectionRefs) }
 				        >
 				        	Processus
@@ -78,7 +78,7 @@ const Layout = ({ children, sectionRefs }) => {
 				        <li
 				        	ref={ blogNavRef }
 				        	id="blog"
-				        	className="pb2 pointer dim f6 f5-l dib dark-blue b mr3 mr4-l ttu" 
+				        	className={ styles.nav + ' pb2 pointer dim f6 f5-l dib b mr3 mr4-l ttu' }
 				        	onClick={ () => scrollToSection(blogNavRef.current.id, sectionRefs) }
 				        >
 				        	Blog
@@ -86,7 +86,7 @@ const Layout = ({ children, sectionRefs }) => {
 				        <li 
 				        	ref={ contactNavRef }
 				        	id="contact"
-				        	className="pb2 pointer dim f6 f5-l dib dark-blue b ttu"  
+				        	className={ styles.nav + ' pb2 pointer dim f6 f5-l dib b ttu' }  
 				        	onClick={ () => scrollToSection(contactNavRef.current.id, sectionRefs) }
 				        >
 				        	Contact
@@ -160,7 +160,7 @@ const Layout = ({ children, sectionRefs }) => {
 			</footer>
 			<style jsx>{`
 				.is-active {
-					border-bottom: 4px solid #AEE4F3;
+					border-bottom: 4px solid #FFFFFF;
 				}
 			`}</style>
 		</>

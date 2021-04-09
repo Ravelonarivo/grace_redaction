@@ -15,15 +15,16 @@ const Presentation = ({ presentationSectionRef, sectionRefs }) => {
 		            quality={100}
 		            alt="presentation-image"
 	            />
+	            
 	        </div>
 	        <div className={ styles.bgTextAndButton }>
-	        	<h1 className={ styles.bgText + ' fw8 ttu bg-dark-blue white pa2 o-90 br-pill' }>
+	        	<h1 className={ styles.bgText + ' fw8 ttu white pa2 o-90 br-pill' }>
 	              	Confiez-nous vos projets.
 	            </h1>
 	            <div className="tc ph3">
 	              	<ul>
 	              		<li 
-	              			className="pointer f4 grow no-underline br-pill ph3 pv2 mb2 dib bg-dark-blue white" 
+	              			className={ styles.button + ' pointer f4 grow no-underline br-pill ph3 pv2 mb2 dib white' } 
 	              			onClick={ () => scrollToSection('offers', sectionRefs) }
 	              		> 
 	              			Voir nos offres

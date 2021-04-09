@@ -1,17 +1,19 @@
 .formular:focus {
 	outline: none !important;
-    border: 3px solid #AEE4F3;
-    box-shadow: 0 0 10px #AEE4F3;
+    border: 3px solid #A463F2;
+    box-shadow: 0 0 10px #A463F2;
 }
 
 .submitButton:focus {
-	outline: none !important;
+	outline: none !important; 
+}
+
+.submitButton {
+	background-color: #FF005C;
 }
 
 .background {
-	background: #00449E;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #AEE4F3, #00449E);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #AEE4F3, #00449E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background-color: #93329E;
 }
 
 .title:after {
@@ -25,5 +27,12 @@
 }
 
 .subTitle {
-	color: #AEE4F3;
+	color: #ffffff;
+	background: #FF005C;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, rgba(174, 228, 243, 0.95), rgba(0, 68, 158, 0.95));  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, rgba(255,0,92, 0.95), rgba(188,71,73, 0.95)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.color {
+	color: #FF005C;
 }

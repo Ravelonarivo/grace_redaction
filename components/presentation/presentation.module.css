@@ -1,5 +1,4 @@
 .bgWrap {
-  filter: contrast(150%);
   position: relative;
   height: 100vh;
   width: 100%;
@@ -9,6 +8,7 @@
 
 .bgText {
   font-size: 3.3rem;
+  background-color: #93329E;
 }
 
 .bgTextAndButton {
@@ -20,4 +20,12 @@
 
 .background {
   clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
+}
+
+.backgroundColor {
+  background-color: #A463F2;
+}
+
+.button {
+  background-color: #FF005C;
 }
