@@ -36,3 +36,7 @@
 .color {
 	color: #FF005C;
 }
+
+.video {
+	object-fit: cover;		
+}
