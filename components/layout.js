@@ -54,7 +54,7 @@ const Layout = ({ children, sectionRefs }) => {
 				    	<li 
 				    		ref={ presentationNavRef }
 				    		id="presentation"
-				    		className={ styles.nav + ' pb2 pointer dim f6 f5-l dib b mr3 mr4-l ttu' }
+				    		className="pb2 pointer dim f6 f5-l dib b mr3 mr4-l ttu white"
 				    		onClick={ () => scrollToSection(presentationNavRef.current.id, sectionRefs) }
 				    	>
 				    		Accueil
@@ -62,7 +62,7 @@ const Layout = ({ children, sectionRefs }) => {
 				        <li 
 				        	ref={ offersNavRef }
 				        	id="offers"
-				        	className={ styles.nav + ' pb2 pointer dim f6 f5-l dib b mr3 mr4-l ttu' } 
+				        	className="pb2 pointer dim f6 f5-l dib b mr3 mr4-l ttu white" 
 				        	onClick={ () => scrollToSection(offersNavRef.current.id, sectionRefs)}
 				        >
 				        	Offres
@@ -70,7 +70,7 @@ const Layout = ({ children, sectionRefs }) => {
 				        <li 
 				        	ref={ processNavRef }
 				        	id="process"
-				        	className={ styles.nav + ' pb2 pointer dim f6 f5-l dib b mr3 mr4-l ttu' } 
+				        	className="pb2 pointer dim f6 f5-l dib b mr3 mr4-l ttu white" 
 				        	onClick={ () => scrollToSection(processNavRef.current.id, sectionRefs) }
 				        >
 				        	Processus
@@ -78,7 +78,7 @@ const Layout = ({ children, sectionRefs }) => {
 				        <li
 				        	ref={ blogNavRef }
 				        	id="blog"
-				        	className={ styles.nav + ' pb2 pointer dim f6 f5-l dib b mr3 mr4-l ttu' }
+				        	className="pb2 pointer dim f6 f5-l dib b mr3 mr4-l ttu white"
 				        	onClick={ () => scrollToSection(blogNavRef.current.id, sectionRefs) }
 				        >
 				        	Blog
@@ -86,7 +86,7 @@ const Layout = ({ children, sectionRefs }) => {
 				        <li 
 				        	ref={ contactNavRef }
 				        	id="contact"
-				        	className={ styles.nav + ' pb2 pointer dim f6 f5-l dib b ttu' }  
+				        	className="pb2 pointer dim f6 f5-l dib b ttu white"  
 				        	onClick={ () => scrollToSection(contactNavRef.current.id, sectionRefs) }
 				        >
 				        	Contact
@@ -100,12 +100,14 @@ const Layout = ({ children, sectionRefs }) => {
 		    <footer className="bg-near-black white-80 pv5 ph7 vh-75">
 		    	<div className="h-100">
 			    	<div className="fl w-25 h-100">
-			    		<Image
-			    			src="/logos/logo_5.png"
-			    			height={60}
-			    			width={60}
-			    			alt="logo-footer"
-			    		/>
+			    		<a className="link dim" href="#" title="Aller à la page d'Accueil">
+				    		<Image
+				    			src="/logos/logo_5.png"
+				    			height={60}
+				    			width={60}
+				    			alt="logo-footer"
+				    		/>
+				    	</a>	
 			    		<a className="link dim db f5 mb2 mt3" href="#">Accueil</a>
 			    		<a className="link dim db f5 mb2" href="#">Offres</a>
 			    		<a className="link dim db f5 mb2" href="#">Processus</a>
@@ -126,11 +128,11 @@ const Layout = ({ children, sectionRefs }) => {
 							  	height="1.5rem"
 							  	width="1.5rem"
 							/>
-							<a className="link dim f5 ml2" href="#">contact@graceredaction.com</a>
+							<a className="link dim f5 ml2" title="email" href="#">contact@graceredaction.com</a>
 						</div>
 			    	</div>
 			    	<div className="tc fr w-25 h-100">
-			    		<a className="link dim mr3" href="#">
+			    		<a className="link dim mr3" title="facebook" href="#">
 			    			<Image
 								src="/facebook.svg"
 								alt="icon-facebook"
@@ -138,7 +140,7 @@ const Layout = ({ children, sectionRefs }) => {
 								height={30}
 							/>
 			    		</a>
-			    		<a className="link dim mr3" href="#">
+			    		<a className="link dim mr3" title="instagram" href="#">
 			    			<Image
 								src="/instagram.svg"
 								alt="icon-instagram"
@@ -146,7 +148,7 @@ const Layout = ({ children, sectionRefs }) => {
 								height={30}
 							/>
 			    		</a>
-			    		<a className="link dim" href="#">
+			    		<a className="link dim" title="twitter" href="#">
 			    			<Image
 								src="/twitter.svg"
 								alt="icon-twitter"

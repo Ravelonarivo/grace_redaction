@@ -22,15 +22,11 @@
   clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
 }
 
-.backgroundColor {
-  background-color: #A463F2;
-}
-
 .button {
   background-color: #FF005C;
 }
 
-.test {
+.backgroundColor {
   background-color: #93329E;
   /*background-color: #FF005C;*/
   /*background-color: #A463F2;*/

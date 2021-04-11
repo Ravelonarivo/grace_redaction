@@ -18,7 +18,7 @@ const Contact = ({ contactSectionRef }) => {
 				<video className={ styles.video + ' absolute w-100 h-100' } autoPlay muted loop>
 					<source src="/contact.mp4" type="video/mp4"/> 
 				</video>
-				<div ref={ contactSectionRef } id="contact" className={ styles.background + ' absolute o-90 h-100 w-100 pt4' }>
+				<div ref={ contactSectionRef } id="contact" className={ styles.backgroundColor + ' absolute o-90 h-100 w-100 pt4' }>
 					<h2 className={ styles.title + ' tc f2 white fw5 mt0' }>Entrez en contact avec nous</h2>
 					<div className="mh7">
 						<div className="fl w-60 pv4 ph4">
@@ -33,7 +33,7 @@ const Contact = ({ contactSectionRef }) => {
 								<input className={ styles.submitButton + ' pointer br-pill grow f5 white fw5 h2 ph4 ba pb2' } type="submit" value="Envoyer"/>
 							</form>
 						</div>
-						<div className={ styles.subTitle + " fr w-40 pv4 ph4 br4" }>
+						<div className={ styles.socialNetwork + " fr w-40 pv4 ph4 br4" }>
 							<h3 className="f4 fw5 mb4">Ou via les réseaux sociaux</h3>
 							<a className="db link dim mb4 f5" href="#">
 								<Image

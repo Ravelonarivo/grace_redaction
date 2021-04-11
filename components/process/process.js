@@ -5,7 +5,7 @@ import Image from 'next/image';
 const Process = ({ processSectionRef }) => {
 	return (
 		<div ref={ processSectionRef } id="process" className={ styles.background + ' mt5 pb5'}>
-			<h2 className={ styles.title + ' tc f2 white fw5 pt6' }>Comment nous procédons</h2>
+			<h2 className="tc f2 white fw5 pt6">Comment nous procédons</h2>
 			<div className="vh-75">
 				<div className="mh7 h-100">
 					<div className="fl h-100 w-40 pv5 pr3">
@@ -57,7 +57,7 @@ const Process = ({ processSectionRef }) => {
 					<div className="fr relative h-100 w-60">
 						<Image
 							priority="true"
-				        	src="/blob_2.png"
+				        	src="/blob.png"
 				            alt="blob-image"
 				            width="600"
 				            height="600"

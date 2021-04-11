@@ -15,7 +15,7 @@ const Presentation = ({ presentationSectionRef, sectionRefs }) => {
 		            quality={100}
 		            alt="presentation-image"
 	            />
-	            <div className={ styles.test + " absolute h-100 w-100 o-40" }></div>
+	            <div className={ styles.backgroundColor + " absolute h-100 w-100 o-40" }></div>
 	        </div>
 	        <div className={ styles.bgTextAndButton }>
 	        	<h1 className={ styles.bgText + ' fw8 ttu white pa2 o-90 br-pill' }>
