@@ -25,7 +25,7 @@ const Offers = ({ offersSectionRef }) => {
 					    	<h3 className={ styles.subTitle_1 + ' f4 fw5 ma0 pt3' }>Rédaction</h3>
 					  	</div>
 					  	<svg style={{ display:'block' }} height="100%" width="100%" id="svg" viewBox="0 0 1440 400" xmlns="http://www.w3.org/2000/svg" className="transition duration-300 ease-in-out delay-150">
-					  		<path d="M 0,400 C 0,400 0,200 0,200 C 110.86124401913872,185.4928229665072 221.72248803827745,170.98564593301438 329,167 C 436.27751196172255,163.01435406698562 539.9712918660288,169.55023923444975 617,192 C 694.0287081339712,214.44976076555025 744.3923444976077,252.81339712918663 837,245 C 929.6076555023923,237.18660287081337 1064.4593301435407,183.19617224880383 1172,168 C 1279.5406698564593,152.80382775119617 1359.7703349282297,176.4019138755981 1440,200 C 1440,200 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="#93329E" className="transition-all duration-300 ease-in-out delay-150"></path>
+					  		<path d="M 0,400 C 0,400 0,200 0,200 C 87.57142857142861,229.57142857142856 175.14285714285722,259.1428571428571 304,243 C 432.8571428571428,226.85714285714286 602.9999999999998,164.99999999999997 738,143 C 873.0000000000002,121.00000000000003 972.8571428571429,138.85714285714286 1084,155 C 1195.142857142857,171.14285714285714 1317.5714285714284,185.57142857142856 1440,200 C 1440,200 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="#93329eff" class="transition-all duration-300 ease-in-out delay-150"></path>
 					  	</svg>
 					  	<p className={ styles.backgroundColor_1 + ' lh-copy measure center ph4 white ma0 pb4 br--bottom br3'}>
 					    	Quite affectionate and outgoing.
@@ -45,7 +45,9 @@ const Offers = ({ offersSectionRef }) => {
 							/>
 					    	<h3 className={ styles.subTitle_2 + ' f4 fw5 ma0 pt3' }>Réécriture</h3>
 					  	</div>
-					  	<svg style={{ display:'block' }} height="100%" width="100%" id="svg" viewBox="0 0 1440 400" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><path d="M 0,400 C 0,400 0,200 0,200 C 100.69487179487183,166.95128205128205 201.38974358974366,133.9025641025641 279,137 C 356.61025641025634,140.0974358974359 411.1358974358974,179.34102564102562 483,207 C 554.8641025641026,234.65897435897438 644.0666666666667,250.73333333333332 716,243 C 787.9333333333333,235.26666666666668 842.5974358974358,203.725641025641 930,197 C 1017.4025641025642,190.274358974359 1137.5435897435898,208.36410256410255 1228,213 C 1318.4564102564102,217.63589743589745 1379.228205128205,208.81794871794872 1440,200 C 1440,200 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="#ff005cff" class="transition-all duration-300 ease-in-out delay-150"></path></svg>
+					  	<svg style={{ display:'block' }} height="100%" width="100%" id="svg" viewBox="0 0 1440 400" xmlns="http://www.w3.org/2000/svg" className="transition duration-300 ease-in-out delay-150">
+					  		<path d="M 0,400 C 0,400 0,200 0,200 C 135.10714285714286,195.82142857142856 270.2142857142857,191.64285714285714 377,202 C 483.7857142857143,212.35714285714286 562.2499999999999,237.25 687,237 C 811.7500000000001,236.75 982.7857142857142,211.35714285714286 1116,201 C 1249.2142857142858,190.64285714285714 1344.607142857143,195.32142857142856 1440,200 C 1440,200 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="#ff005cff" class="transition-all duration-300 ease-in-out delay-150"></path>
+					  	</svg>
 					  	<p className={ styles.backgroundColor_2 + ' lh-copy measure center ph4 white ma0 pb4 br--bottom br3'}>
 					    	Quite affectionate and outgoing.
 					    	She loves to get chin scratches and will
@@ -64,8 +66,8 @@ const Offers = ({ offersSectionRef }) => {
 							/>
 					    	<h3 className={ styles.subTitle_3 + ' f4 fw5 ma0 pt3' }>Correction</h3>
 					  	</div>
-					  	<svg style={{ display:'block' }} height="100%" width="100%" id="svg" viewBox="0 0 1440 400" xmlns="http://www.w3.org/2000/svg" className="transition duration-300 ease-in-out delay-150">
-					  		<path d="M 0,400 C 0,400 0,200 0,200 C 74.93779904306217,172.98564593301438 149.87559808612434,145.97129186602874 258,163 C 366.12440191387566,180.02870813397126 507.43540669856463,241.10047846889944 600,263 C 692.5645933014354,284.89952153110056 736.3827751196171,267.62679425837325 831,233 C 925.6172248803829,198.37320574162675 1071.0334928229668,146.39234449760767 1181,138 C 1290.9665071770332,129.60765550239233 1365.4832535885166,164.80382775119617 1440,200 C 1440,200 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="#A463F2" className="transition-all duration-300 ease-in-out delay-150"></path>
+					  	<svg style={{ display:'block' }} height="100%" width="100%" id="svg" viewBox="0 0 1440 400" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150">
+					  		<path d="M 0,400 C 0,400 0,200 0,200 C 152.67857142857144,233.78571428571428 305.3571428571429,267.57142857142856 417,264 C 528.6428571428571,260.42857142857144 599.25,219.5 705,219 C 810.75,218.5 951.6428571428571,258.42857142857144 1080,262 C 1208.357142857143,265.57142857142856 1324.1785714285716,232.78571428571428 1440,200 C 1440,200 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="#a463f2ff" class="transition-all duration-300 ease-in-out delay-150"></path>
 					  	</svg>					  	
 					  	<p className={ styles.backgroundColor_3 + ' lh-copy measure center ph4 white bg-dark-blue ma0 pb4 br--bottom br3' }>
 					    	Quite affectionate and outgoing.
