@@ -1,3 +1,7 @@
+.title, .processVisibility {
+	visibility: hidden;
+}
+
 .title:after {
 	display: block;
     height: 4px;

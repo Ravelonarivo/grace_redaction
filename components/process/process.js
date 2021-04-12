@@ -2,14 +2,41 @@ import styles from './process.module.css';
 import homeStyles from '../../styles/Home.module.css';
 import Image from 'next/image';
 
+import { useRef, useEffect } from 'react';
+
 const Process = ({ processSectionRef }) => {
+	const titleRef = useRef(null);
+	const processRef = useRef(null);
+	const firstStepRef = useRef(null);
+	const secondStepRef= useRef(null);
+	const thirdStepRef = useRef(null);
+	const fourthStepRef = useRef(null);
+
+	const animate = () => {
+		const titleRect = titleRef.current.getBoundingClientRect();
+		if ((titleRect.top > 0 && titleRect.top <= 100) || (titleRect.bottom >= 100 && titleRect.bottom <= (window.innerHeight || document.documentElement.clientHeight))) {
+			titleRef.current.style.visibility = 'visible';
+			titleRef.current.classList.add('animate__backInRight');
+			processRef.current.style.visibility = 'visible';
+			firstStepRef.current.classList.add('animate__lightSpeedInLeft', 'animate__delay-2s');
+			secondStepRef.current.classList.add('animate__lightSpeedInLeft', 'animate__delay-3s');
+			thirdStepRef.current.classList.add('animate__lightSpeedInLeft', 'animate__delay-4s');
+			fourthStepRef.current.classList.add('animate__lightSpeedInLeft', 'animate__delay-5s');
+		}		
+	};
+
+	useEffect(() => {
+		window.addEventListener('scroll', animate);
+		return () => window.removeEventListener('scroll', animate);
+	});
+
 	return (
 		<div ref={ processSectionRef } id="process" className={ styles.background + ' mt5 pb5'}>
-			<h2 className={ styles.title + ' tc f2 white fw5 pt6' }>Comment nous procédons</h2>
+			<h2 ref={ titleRef } className={ styles.title + ' tc f2 white fw5 pt6 animate__animated' }>Comment nous procédons</h2>
 			<div className="vh-75">
 				<div className="mh7 h-100">
-					<div className="fl h-100 w-40 pv5 pr3">
-						<div className="flex h-25 w-100">
+					<div ref={ processRef } className={ styles.processVisibility + ' fl h-100 w-40 pv5 pr3' }>
+						<div ref={ firstStepRef } className="flex h-25 w-100 animate__animated">
 							<div className="tc w-30">
 								<div className="br-100 h3 w3 dib ba bw1 pv3 f3 fw5 white">1</div>
 							</div>
@@ -20,7 +47,7 @@ const Process = ({ processSectionRef }) => {
 								</p>
 							</div>
 						</div>
-						<div className="flex h-25 w-100">
+						<div ref={ secondStepRef }  className="flex h-25 w-100 animate__animated">
 							<div className="tc w-30">
 								<div className="br-100 h3 w3 dib ba bw1 pv3 f3 white fw5">2</div>
 							</div>
@@ -31,7 +58,7 @@ const Process = ({ processSectionRef }) => {
 								</p>
 							</div>
 						</div>
-						<div className="flex h-25 w-100">
+						<div ref={ thirdStepRef } className="flex h-25 w-100 animate__animated">
 							<div className="tc w-30">
 								<div className="br-100 h3 w3 dib ba bw1 pv3 f3 white fw5">3</div>
 							</div>
@@ -42,7 +69,7 @@ const Process = ({ processSectionRef }) => {
 								</p>
 							</div>
 						</div>
-						<div className="flex h-25 w-100">
+						<div ref={ fourthStepRef } className="flex h-25 w-100 animate__animated">
 							<div className="tc w-30">
 								<div className="br-100 h3 w3 dib ba bw1 pv3 f3 white fw5">4</div>
 							</div>

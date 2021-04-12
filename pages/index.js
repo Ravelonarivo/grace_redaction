@@ -8,6 +8,8 @@ import Contact from '../components/contact/contact';
 
 import { useRef } from 'react';
 
+import 'animate.css';
+
 const Home = () => {
   const presentationSectionRef = useRef(null);
   const offersSectionRef = useRef(null);
@@ -24,6 +26,7 @@ const Home = () => {
       <Head>
         <title>Home</title>
         <link rel="icon" href="/favicon.ico" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"/>
       </Head>
 
       <Presentation 

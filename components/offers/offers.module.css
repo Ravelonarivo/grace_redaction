@@ -12,6 +12,7 @@
 
 .title {
     color: #93329E;
+    visibility: hidden;
 }
 
 .title:after {
@@ -34,6 +35,10 @@
 
 .subTitle_3 {
     color: #A463F2;
+}
+
+.offersVisibility {
+    visibility: hidden;
 }
 
 

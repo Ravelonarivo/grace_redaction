@@ -1,19 +1,48 @@
 import styles from './offers.module.css';
 import homeStyles from '../../styles/Home.module.css';
+
 import { DesktopOutline } from 'react-ionicons';
 import { DocumentTextOutline } from 'react-ionicons';
 import { CheckmarkDoneOutline } from 'react-ionicons';
+
 import Image from 'next/image';
 
+import { useRef, useEffect } from 'react';
+
 const Offers = ({ offersSectionRef }) => {
+	const titleRef = useRef(null);
+	const offersRef = useRef(null);
+	const writingRef = useRef(null);
+	const rewritingRef= useRef(null);
+	const correctionRef = useRef(null);
+
+	const animate = () => {
+		const titleRect = titleRef.current.getBoundingClientRect();
+		if ((titleRect.top > 0 && titleRect.top <= 100) || (titleRect.bottom >= 100 && titleRect.bottom <= (window.innerHeight || document.documentElement.clientHeight))) {
+			titleRef.current.style.visibility = 'visible';
+			titleRef.current.classList.add('animate__backInLeft');
+			offersRef.current.style.visibility = 'visible';
+			writingRef.current.classList.add('animate__flipInX', 'animate__delay-2s');
+			rewritingRef.current.classList.add('animate__flipInX', 'animate__delay-3s');
+			correctionRef.current.classList.add('animate__flipInX', 'animate__delay-4s');
+		}		
+	};
+
+	useEffect(() => {
+		window.addEventListener('scroll', animate);
+		return () => window.removeEventListener('scroll', animate);
+	});
+
 	return (
 		<div ref={ offersSectionRef } id="offers" className="mt5 mh7">
-			<h2 className={ styles.title + ' tc f2 dark-blue fw5' }>Nous sommes une agence de rédaction</h2>
+			<h2 ref={ titleRef } className={ styles.title + ' tc f2 dark-blue fw5 animate__animated' }>
+				Nous sommes une agence de rédaction
+			</h2>
 			<p className="mh6 f4 lh-copy">
 				Nam porttitor justo id ante lacinia faucibus. Nullam erat velit, placerat ut mollis a, venenatis vitae sapien. Vestibulum pretium arcu lorem. Ut vitae dolor eu dolor aliquam varius a id mauris. Suspendisse sollicitudin nunc vel sem vestibulum faucibus.
 			</p>
-			<div className="mt4 tc">
-				<div className="dib br3 mh4 mw5 mv3 shadow-3">
+			<div ref={ offersRef }  className={ styles.offersVisibility +  ' mt4 tc' }>
+				<div ref={ writingRef } className="dib br3 mh4 mw5 mv3 shadow-3 animate__animated">
 					<article>
 						<div className="tc bg-white pt4 br--top br3">
 					    	<DesktopOutline
@@ -34,7 +63,7 @@ const Offers = ({ offersSectionRef }) => {
 					  	</p>
 					</article>
 				</div>
-				<div className="dib br3 mh4 mw5 mv3 shadow-3">
+				<div ref={ rewritingRef } className="dib br3 mh4 mw5 mv3 shadow-3 animate__animated">
 					<article>
 						<div className="tc bg-white pt4 br--top br3">
 					    	<DocumentTextOutline
@@ -55,7 +84,7 @@ const Offers = ({ offersSectionRef }) => {
 					  	</p>
 					</article>
 				</div>
-				<div className="dib br3 mh4 mw5 mv3 shadow-3">
+				<div ref={ correctionRef } className="dib br3 mh4 mw5 mv3 shadow-3 animate__animated">
 					<article>
 						<div className="tc bg-white pt4 br--top br3">
 					    	<CheckmarkDoneOutline
