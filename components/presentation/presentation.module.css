@@ -16,6 +16,7 @@
   top: 55%; 
   left: 47%;
   transform: translate(-50%, -50%);
+  overflow: hidden;
 }
 
 .background {

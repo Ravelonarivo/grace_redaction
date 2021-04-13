@@ -34,7 +34,7 @@ const Offers = ({ offersSectionRef }) => {
 	});
 
 	return (
-		<div ref={ offersSectionRef } id="offers" className="mt5 mh7">
+		<div ref={ offersSectionRef } id="offers" className={ styles.background + ' mt5 mh7' }>
 			<h2 ref={ titleRef } className={ styles.title + ' tc f2 dark-blue fw5 animate__animated' }>
 				Nous sommes une agence de rédaction
 			</h2>

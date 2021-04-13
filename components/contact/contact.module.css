@@ -12,8 +12,13 @@
 	background-color: #FF005C;
 }
 
-.backgroundColor {
+.background {
 	background-color: #93329E;
+	overflow: hidden;
+}
+
+.title {
+	visibility: hidden;		
 }
 
 .title:after {
@@ -33,8 +38,13 @@
 	background: linear-gradient(to right, rgba(255,0,92, 0.95), rgba(188,71,73, 0.95)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+.socialNetworkTitle {
+	visibility: hidden;	
+}
+
 .color {
 	color: #FF005C;
+	visibility: hidden;	
 }
 
 .video {

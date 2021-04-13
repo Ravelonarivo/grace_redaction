@@ -14,6 +14,7 @@
 
 .title {
     color: #93329E;
+    visibility: hidden;
 }
 
 .subTitle {
@@ -22,4 +23,12 @@
 
 .color {
 	color: #A463F2;
+}
+
+.articleVisibility {
+	visibility: hidden;
+}
+
+.background {
+	overflow: hidden;
 }

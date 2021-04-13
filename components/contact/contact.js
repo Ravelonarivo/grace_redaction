@@ -1,10 +1,33 @@
 import styles from './contact.module.css';
 import homeStyles from '../../styles/Home.module.css';
-import Image from 'next/image'
+import Image from 'next/image';
+
+import { useRef, useEffect } from 'react';
 
 const Contact = ({ contactSectionRef }) => {
+	const titleRef = useRef(null);
+	const formularTitleRef = useRef(null);
+	const socialNetworkTitleRef = useRef(null);
+
+	const animate = () => {
+		const titleRect = titleRef.current.getBoundingClientRect();
+		if ((titleRect.top > 0 && titleRect.top <= 100) || (titleRect.bottom >= 100 && titleRect.bottom <= (window.innerHeight || document.documentElement.clientHeight))) {
+			titleRef.current.style.visibility = 'visible';
+			titleRef.current.classList.add('animate__backInRight');
+			formularTitleRef.current.style.visibility = 'visible';
+			formularTitleRef.current.classList.add('animate__lightSpeedInLeft', 'animate__delay-2s');
+			socialNetworkTitleRef.current.style.visibility = 'visible';
+			socialNetworkTitleRef.current.classList.add('animate__lightSpeedInRight', 'animate__delay-3s');		
+		}		
+	};
+
+	useEffect(() => {
+		window.addEventListener('scroll', animate);
+		return () => window.removeEventListener('scroll', animate);
+	});
+
 	return (
-		<>
+		<div ref={ contactSectionRef } id="contact">
 			<svg style={{ display:'block' }} height="100%" width="100%" id="svg" viewBox="0 0 1440 400" xmlns="http://www.w3.org/2000/svg" className="transition duration-300 ease-in-out delay-150">
 				<path d="M 0,400 C 0,400 0,200 0,200 C 84.06698564593302,209.53110047846891 168.13397129186603,219.06220095693783 274,213 C 379.86602870813397,206.93779904306217 507.53110047846894,185.28229665071768 607,186 C 706.4688995215311,186.71770334928232 777.7416267942584,209.80861244019138 852,229 C 926.2583732057416,248.19138755980862 1003.5023923444976,263.48325358851673 1102,258 C 1200.4976076555024,252.51674641148327 1320.248803827751,226.25837320574163 1440,200 C 1440,200 1440,400 1440,400 Z" stroke="none" strokeWidth="0" fill="#93329eff" className="transition-all duration-300 ease-in-out delay-150"></path>
 			</svg>
@@ -12,11 +35,11 @@ const Contact = ({ contactSectionRef }) => {
 				<video className={ styles.video + ' absolute w-100 h-100' } autoPlay muted loop>
 					<source src="/contact.mp4" type="video/mp4"/> 
 				</video>
-				<div ref={ contactSectionRef } id="contact" className={ styles.backgroundColor + ' absolute o-90 h-100 w-100 pt4' }>
-					<h2 className={ styles.title + ' tc f2 white fw5 mt0' }>Entrez en contact avec nous</h2>
+				<div className={ styles.background + ' absolute o-90 h-100 w-100 pt4' }>
+					<h2 ref={ titleRef } className={ styles.title + ' tc f2 white fw5 mt0 animate__animated' }>Entrez en contact avec nous</h2>
 					<div className="mh7">
 						<div className="fl w-60 pv4 ph4">
-							<h3 className={ styles.color + ' tc f4 fw5' }>En nous écrivant</h3>
+							<h3 ref={ formularTitleRef } className={ styles.color + ' tc f4 fw7 animate__animated' }>En nous écrivant</h3>
 							<form className="mt4">
 								<label htmlFor="contact-form-name" className="f5 white fw5">Nom</label>
 								<input id="contact-form-name" className={ styles.formular + ' db ba pa2 w-100 h2 mt2 mb4 b--black-20 br2' } type="text" placeholder="Entrez votre nom" required/>
@@ -28,7 +51,7 @@ const Contact = ({ contactSectionRef }) => {
 							</form>
 						</div>
 						<div className={ styles.socialNetwork + " fr w-40 pv4 ph4 br4" }>
-							<h3 className="f4 fw5 mb4">Ou via les réseaux sociaux</h3>
+							<h3 ref={ socialNetworkTitleRef	 } className={ styles.socialNetworkTitle + ' f4 fw5 mb4 animate__animated' }>Ou via les réseaux sociaux</h3>
 							<a className="db link dim mb4 f5" href="#">
 								<Image
 									src="/facebook.svg"
@@ -60,7 +83,7 @@ const Contact = ({ contactSectionRef }) => {
 					</div>						
 				</div>
 			</div>
-		</>
+		</div>
 	);
 };
 

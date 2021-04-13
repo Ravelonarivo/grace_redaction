@@ -17,6 +17,13 @@ const Layout = ({ children, sectionRefs }) => {
 
 	const navRefs = [presentationNavRef, offersNavRef, processNavRef, blogNavRef, contactNavRef];
 
+	const footerContentRef = useRef(null);
+	const footerNavRef = useRef(null);
+	const footerOffersRef = useRef(null);
+	const footerMailRef = useRef(null);
+	const footerSocialNetworkRef = useRef(null);
+	const copyrightRef = useRef(null);
+
 	const highlightNav = () => {
 		sectionRefs.forEach(sectionRef => {
 			const sectionRefTop = Math.round(sectionRef.current.getBoundingClientRect().top);	
@@ -36,6 +43,23 @@ const Layout = ({ children, sectionRefs }) => {
 	useEffect(() => {
 		window.addEventListener('scroll', highlightNav);
 		return () => window.removeEventListener('scroll', highlightNav);
+	});
+
+	const animate = () => {
+		const footerContentRect = footerContentRef.current.getBoundingClientRect();
+		if (footerContentRect.top > 0 && footerContentRect.top <= 740) {
+			footerContentRef.current.style.visibility = 'visible';
+			footerNavRef.current.classList.add('animate__lightSpeedInRight');
+			footerOffersRef.current.classList.add('animate__lightSpeedInRight', 'animate__delay-2s');
+			footerMailRef.current.classList.add('animate__lightSpeedInRight', 'animate__delay-3s');
+			footerSocialNetworkRef.current.classList.add('animate__lightSpeedInRight', 'animate__delay-4s');			
+			copyrightRef.current.classList.add('animate__heartBeat', 'animate__delay-5s');
+		}		
+	};
+
+	useEffect(() => {
+		window.addEventListener('scroll', animate);
+		return () => window.removeEventListener('scroll', animate);
 	});
 
 	return (
@@ -97,9 +121,9 @@ const Layout = ({ children, sectionRefs }) => {
 		      
 		    <main>{children}</main>
 		      
-		    <footer className="bg-near-black white-80 pv5 ph7 vh-75">
-		    	<div className="h-100">
-			    	<div className="fl w-25 h-100">
+		    <footer className={ styles.background + ' bg-near-black white-80 pv5 ph7 vh-75' }>
+		    	<div ref={ footerContentRef } className={ styles.content + ' h-100' }>
+			    	<div ref={ footerNavRef } className="fl w-25 h-100 animate__animated">
 			    		<a className="link dim" href="#" title="Aller à la page d'Accueil">
 				    		<Image
 				    			src="/logos/logo_5.png"
@@ -114,13 +138,13 @@ const Layout = ({ children, sectionRefs }) => {
 			    		<a className="link dim db f5 mb2" href="#">Blog</a>
 			    		<a className="link dim db f5 mb2" href="#">Contact</a>
 			    	</div>
-			    	<div className="fl w-25 h-100">
+			    	<div ref={ footerOffersRef } className="fl w-25 h-100 animate__animated">
 			    		<h2 className="f2 fw4 ma0">Nos Offres</h2>
 			    		<a className="link dim db f5 mb2 mt3" href="#">Rédaction</a>
 			    		<a className="link dim db f5 mb2" href="#">Réécriture</a>
 			    		<a className="link dim db f5 mb2" href="#">Correction</a>
 			    	</div>
-			    	<div className="fl w-25 h-100">
+			    	<div ref={ footerMailRef } className="fl w-25 h-100 animate__animated">
 			    		<div className="flex">
 				    		<MailOutline
 							  	color={'#fffff'} 
@@ -131,7 +155,7 @@ const Layout = ({ children, sectionRefs }) => {
 							<a className="link dim f5 ml2" title="email" href="#">contact@graceredaction.com</a>
 						</div>
 			    	</div>
-			    	<div className="tc fr w-25 h-100">
+			    	<div ref={ footerSocialNetworkRef } className="tc fr w-25 h-100 animate__animated">
 			    		<a className="link dim mr3" title="facebook" href="#">
 			    			<Image
 								src="/facebook.svg"
@@ -158,7 +182,7 @@ const Layout = ({ children, sectionRefs }) => {
 			    		</a>
 			    	</div>
 		    	</div>
-				<p className="f5 tc white-80 fw4">© { date.getFullYear() } Grace Rédaction.</p>
+				<p ref={ copyrightRef } className="f5 tc white-80 fw4 animate__animated">© { date.getFullYear() } Grace Rédaction.</p>
 			</footer>
 			<style jsx>{`
 				.is-active {
