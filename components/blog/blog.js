@@ -54,7 +54,7 @@ const Blog = ({ blogSectionRef }) => {
 	];
 
 	return (
-		<div ref={ blogSectionRef } id="blog" className={ styles.background + ' mt5 mh7' }>
+		<div ref={ blogSectionRef } id="blog" className={ styles.background + ' mt6 mh7' }>
 			<h2 ref={ titleRef } className={ styles.title + ' tc f2 dark-blue fw5 animate__animated' }>Consultez notre blog</h2>
 			{
 				articles.map((article, index) => (

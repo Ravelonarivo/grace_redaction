@@ -15,22 +15,23 @@ const Presentation = ({ presentationSectionRef, sectionRefs }) => {
 		            quality={100}
 		            alt="presentation-image"
 	            />
-	            <div className={ styles.backgroundColor + " absolute h-100 w-100 o-40" }></div>
+	            <div className={ styles.backgroundColor + " absolute h-100 w-100 o-70" }></div>
 	        </div>
 	        <div className={ styles.bgTextAndButton }>
-	        	<h1 className={ styles.bgText + ' fw7 ttu white pa2 o-90 br-pill animate__animated animate__backInDown' }>
-	              	Confiez-nous vos projets.
+	        	<h1 className={ styles.bgText + ' fw7 ttu white animate__animated animate__backInDown' }>
+	              	Nous sommes une agence de rédaction.
 	            </h1>
-	            <div className="tc ph3">
-	              	<ul>
-	              		<li 
-	              			className={ styles.button + ' pointer f4 grow no-underline br-pill ph3 pv2 mb2 dib white ba b--white bw1 animate__animated animate__fadeIn animate__delay-2s' } 
-	              			onClick={ () => scrollToSection('offers', sectionRefs) }
-	              		> 
-	              			Voir nos offres
-	              		</li>
-	              	</ul>
-	            </div>
+	            <p className="f4 lh-copy white animate__animated animate__fadeIn animate__delay-2s">
+					Nam porttitor justo id ante lacinia faucibus. Nullam erat velit, placerat ut mollis a, venenatis vitae sapien. Vestibulum pretium arcu lorem. Ut vitae dolor eu dolor aliquam varius a id mauris. Suspendisse sollicitudin nunc vel sem vestibulum faucibus.
+				</p>
+	            <ul className="dib pa0 ml1">
+	              	<li 
+	              		className={ styles.button + ' pointer f4 grow no-underline br-pill ph3 pv2 mb2 dib white ba b--white bw1 animate__animated animate__fadeIn animate__delay-3s' } 
+	           			onClick={ () => scrollToSection('offers', sectionRefs) }
+	           		> 
+	           			Voir nos offres
+	              	</li>
+	            </ul>
 	        </div>	
 		</div>
 	);

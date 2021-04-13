@@ -34,13 +34,8 @@ const Offers = ({ offersSectionRef }) => {
 	});
 
 	return (
-		<div ref={ offersSectionRef } id="offers" className={ styles.background + ' mt5 mh7' }>
-			<h2 ref={ titleRef } className={ styles.title + ' tc f2 dark-blue fw5 animate__animated' }>
-				Nous sommes une agence de rédaction
-			</h2>
-			<p className="mh6 f4 lh-copy">
-				Nam porttitor justo id ante lacinia faucibus. Nullam erat velit, placerat ut mollis a, venenatis vitae sapien. Vestibulum pretium arcu lorem. Ut vitae dolor eu dolor aliquam varius a id mauris. Suspendisse sollicitudin nunc vel sem vestibulum faucibus.
-			</p>
+		<div ref={ offersSectionRef } id="offers" className={ styles.background + ' mt6 mh7' }>
+			<h2 ref={ titleRef } className={ styles.title + ' tc f2 dark-blue fw5 animate__animated' }>Nos offres</h2>
 			<div ref={ offersRef }  className={ styles.offersVisibility +  ' mt4 tc' }>
 				<div ref={ writingRef } className="dib br3 mh4 mw5 mv3 shadow-3 animate__animated">
 					<article>

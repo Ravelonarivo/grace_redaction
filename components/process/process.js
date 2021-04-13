@@ -31,7 +31,7 @@ const Process = ({ processSectionRef }) => {
 	});
 
 	return (
-		<div ref={ processSectionRef } id="process" className={ styles.background + ' mt5 pb5'}>
+		<div ref={ processSectionRef } id="process" className={ styles.background + ' mt6 pb5'}>
 			<h2 ref={ titleRef } className={ styles.title + ' tc f2 white fw5 pt6 animate__animated' }>Comment nous procédons</h2>
 			<div className="vh-75">
 				<div className="mh7 h-100">

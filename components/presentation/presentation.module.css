@@ -7,14 +7,13 @@
 }
 
 .bgText {
-  font-size: 3.3rem;
-  background-color: #93329E;
+  font-size: 3rem;
 }
 
 .bgTextAndButton {
   position: absolute;
   top: 55%; 
-  left: 47%;
+  left: 44%;
   transform: translate(-50%, -50%);
   overflow: hidden;
 }
