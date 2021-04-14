@@ -92,6 +92,7 @@ const Process = ({ processSectionRef }) => {
 			            />
 			            <div className={ styles.blob_1 + ' absolute w-100' }>
 				            <Image
+				            	priority="true"
 					        	src="/blob_1.png"
 					            alt="blob-image"
 					            width="600"

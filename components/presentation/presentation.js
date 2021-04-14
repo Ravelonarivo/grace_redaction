@@ -6,6 +6,7 @@ import { scrollToSection } from '../../lib/functions';
 const Presentation = ({ presentationSectionRef, sectionRefs }) => {
 	return (
 		<div ref={ presentationSectionRef } id="presentation" className={ styles.background }>
+			<div className={ styles.square + ' absolute' }></div>
 			<div className={ styles.bgWrap }>
 	            <Image
 	            	priority="true"

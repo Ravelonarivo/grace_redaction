@@ -41,3 +41,13 @@
   /*background-color: #FF005C;*/
   /*background-color: #A463F2;*/
 }
+
+.square {
+    background-image: radial-gradient(#FF005C 2px, transparent 1px);
+    background-size: 20px 20px;
+    width: 8%;
+    height: 16%;
+    top: 25%; 
+    left: 85%;
+    transform: translate(-50%, -40%);
+}

@@ -40,7 +40,7 @@ const Offers = ({ offersSectionRef }) => {
 		<Particles className="absolute w-100 h-100" url="particlesjs-config.json"/>
 		<div ref={ offersSectionRef } id="offers" className={ styles.background + ' mt6' }>
 			<div className={ styles.test }></div>
-			<h2 ref={ titleRef } className={ styles.title + ' tc f2 dark-blue fw5 animate__animated' }>Nos offres</h2>
+			<h2 ref={ titleRef } className={ styles.title + ' tc f2 dark-blue fw5 animate__animated' }>Confiez-nous vos projets</h2>
 			<div ref={ offersRef }  className={ styles.offersVisibility +  ' mt4 tc' }>
 				<div ref={ writingRef } className="dib br3 mh4 mw5 mv3 shadow-3 animate__animated">
 					<article>

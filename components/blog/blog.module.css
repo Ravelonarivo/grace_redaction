@@ -27,8 +27,50 @@
 
 .articleVisibility {
 	visibility: hidden;
+	z-index: 1;
 }
 
 .background {
 	overflow: hidden;
 }
+
+.square {
+    background-image: radial-gradient(#FF005C 2px, transparent 1px);
+    background-size: 20px 20px;
+    width: 20%;
+    height: 30%;
+    top: 15%; 
+  	left: 15%;
+  	transform: translate(-50%, -50%);
+}
+
+.circle {
+    /*ackground-image: radial-gradient(#FFFFFF 2px, #A463F2 1px);
+    background-size: 20px 20px;*/
+    background-color: #A463F2; 
+    width: 15%;
+    height: 22%;
+    top: 42%; 
+  	left: 85%;
+  	transform: translate(-40%, -40%);
+}
+
+.square_1 {
+    background-image: radial-gradient(#93329E 2px, transparent  1px);
+    background-size: 20px 20px;
+    width: 7%;
+    height: 10%;
+    top: 68%; 
+  	left: 13%;
+  	transform: translate(-50%, -40%);
+}
+
+.circle_1 {
+    background-color: #FF005C; 
+    width: 5%;
+    height: 8%;
+    top: 95%; 
+  	left: 40%;
+  	transform: translate(-50%, -40%);
+}
+
