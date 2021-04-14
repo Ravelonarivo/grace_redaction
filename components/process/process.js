@@ -2,7 +2,7 @@ import styles from './process.module.css';
 import homeStyles from '../../styles/Home.module.css';
 import Image from 'next/image';
 
-import { useRef, useEffect } from 'react';
+import { useRef, useEffect, useState } from 'react';
 
 const Process = ({ processSectionRef }) => {
 	const titleRef = useRef(null);
@@ -82,6 +82,7 @@ const Process = ({ processSectionRef }) => {
 						</div>
 					</div>
 					<div className="fr relative h-100 w-60">
+						<div className={ styles.square + ' absolute' }></div>
 						<Image
 							priority="true"
 				        	src="/blob.png"
@@ -89,6 +90,14 @@ const Process = ({ processSectionRef }) => {
 				            width="600"
 				            height="600"
 			            />
+			            <div className={ styles.blob_1 + ' absolute w-100' }>
+				            <Image
+					        	src="/blob_1.png"
+					            alt="blob-image"
+					            width="600"
+					            height="600"
+				            />
+			            </div>
 					</div>
 				</div>
 			</div>

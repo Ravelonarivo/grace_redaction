@@ -9,6 +9,8 @@ import Image from 'next/image';
 
 import { useRef, useEffect } from 'react';
 
+import Particles from "react-tsparticles";
+
 const Offers = ({ offersSectionRef }) => {
 	const titleRef = useRef(null);
 	const offersRef = useRef(null);
@@ -34,12 +36,15 @@ const Offers = ({ offersSectionRef }) => {
 	});
 
 	return (
-		<div ref={ offersSectionRef } id="offers" className={ styles.background + ' mt6 mh7' }>
+		<>
+		<Particles className="absolute w-100 h-100" url="particlesjs-config.json"/>
+		<div ref={ offersSectionRef } id="offers" className={ styles.background + ' mt6' }>
+			<div className={ styles.test }></div>
 			<h2 ref={ titleRef } className={ styles.title + ' tc f2 dark-blue fw5 animate__animated' }>Nos offres</h2>
 			<div ref={ offersRef }  className={ styles.offersVisibility +  ' mt4 tc' }>
 				<div ref={ writingRef } className="dib br3 mh4 mw5 mv3 shadow-3 animate__animated">
 					<article>
-						<div className="tc bg-white pt4 br--top br3">
+						<div className="tc bg-transparent pt4 br--top br3">
 					    	<DesktopOutline
 							  color={'#93329E'} 
 							  title={ 'writing' }
@@ -60,7 +65,7 @@ const Offers = ({ offersSectionRef }) => {
 				</div>
 				<div ref={ rewritingRef } className="dib br3 mh4 mw5 mv3 shadow-3 animate__animated">
 					<article>
-						<div className="tc bg-white pt4 br--top br3">
+						<div className="tc bg-transparent pt4 br--top br3">
 					    	<DocumentTextOutline
 							  color={'#FF005C'} 
 							  title={ 'writing' }
@@ -81,7 +86,7 @@ const Offers = ({ offersSectionRef }) => {
 				</div>
 				<div ref={ correctionRef } className="dib br3 mh4 mw5 mv3 shadow-3 animate__animated">
 					<article>
-						<div className="tc bg-white pt4 br--top br3">
+						<div className="tc bg-transparent pt4 br--top br3">
 					    	<CheckmarkDoneOutline
 							  color={'#A463F2'} 
 							  title={ 'writing' }
@@ -102,6 +107,7 @@ const Offers = ({ offersSectionRef }) => {
 				</div>
 			</div>
 		</div>
+		</>
 	);
 };
 

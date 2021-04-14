@@ -22,3 +22,39 @@
     background-attachment: fixed;
     overflow: hidden;
 }
+
+/*.square {
+	z-index: 1;
+    background-image: radial-gradient(#FFFFFF 2px, transparent 1px);
+    background-size: 20px 20px;
+    width: 30%;
+    height: 30%;
+    top: 15%; 
+  	left: 15%;
+  	transform: translate(-10%, -10%);
+}
+
+.blob_1 {
+	z-index: -1;
+    top: 15%; 
+  	left: 15%;
+  	transform: translate(-10%, -10%);
+}*/
+
+.square {
+	z-index: 1;
+    background-image: radial-gradient(#FFFFFF 2px, transparent 1px);
+    background-size: 20px 20px;
+    width: 30%;
+    height: 30%;
+    top: 15%; 
+  	left: 15%;
+  	transform: translate(170%, -40%);
+}
+
+.blob_1 {
+	z-index: -1;
+    top: 15%; 
+  	left: 15%;
+  	transform: translate(-20%, -20%);
+}

@@ -10,6 +10,16 @@
   font-size: 3rem;
 }
 
+.bgText:after {
+    display: block;
+    height: 6px;
+    background-color: #FF005C;
+    content: " ";
+    width: 100px;
+    margin-left: 4px;
+    margin-top: 30px;
+}
+
 .bgTextAndButton {
   position: absolute;
   top: 55%; 

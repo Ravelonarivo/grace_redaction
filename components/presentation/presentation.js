@@ -26,7 +26,7 @@ const Presentation = ({ presentationSectionRef, sectionRefs }) => {
 				</p>
 	            <ul className="dib pa0 ml1">
 	              	<li 
-	              		className={ styles.button + ' pointer f4 grow no-underline br-pill ph3 pv2 mb2 dib white ba b--white bw1 animate__animated animate__fadeIn animate__delay-3s' } 
+	              		className={ styles.button + ' pointer f4 no-underline br-pill ph3 pv2 mb2 dib white ba b--white bw1 animate__animated animate__bounceIn animate__delay-3s' } 
 	           			onClick={ () => scrollToSection('offers', sectionRefs) }
 	           		> 
 	           			Voir nos offres
